@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FrenshiChatBotAndroidApp</string>
+    <string name="send_button">Send</string>
+    <string name="user_input_text">Write your text here…</string>
+    <string name="typing">Typing…</string>
+    <string name="empty"> </string>
+</resources>
