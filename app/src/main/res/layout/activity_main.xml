@@ -2,16 +2,18 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
     android:orientation="vertical">
 
     <ScrollView
         style="@android:style/Widget.DeviceDefault.Light.ScrollView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="758dp"
         android:layout_weight="1"
         android:focusableInTouchMode="true"
         android:minWidth="48dp"
-        android:minHeight="48dp">
+        android:minHeight="48dp"
+        android:visibility="visible">
 
         <TextView
             android:id="@+id/chatText0"
@@ -24,31 +26,47 @@
             android:textSize="18sp" />
     </ScrollView>
 
+    <EditText
+        android:id="@+id/userInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:ems="10"
+        android:inputType="text"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:text="@string/user_input_text"
+        android:textColor="#888484"
+        android:textSize="18sp" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <EditText
-            android:id="@+id/userInput"
+        <TextView
+            android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:ems="10"
-            android:inputType="text"
             android:minWidth="48dp"
             android:minHeight="48dp"
-            android:text="@string/user_input_text"
-            android:textColor="#888484"
+            android:text="@string/caractere_number_default"
+            android:textAlignment="textEnd"
             android:textSize="18sp" />
 
         <Button
             android:id="@+id/sendButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:background="@color/white"
+            android:foreground="@android:drawable/ic_menu_send"
+            android:foregroundGravity="fill"
             android:minWidth="48dp"
             android:minHeight="48dp"
-            android:text="@string/send_button"
-            android:textSize="20sp" />
+            android:textSize="18sp" />
+
     </LinearLayout>
+
 </LinearLayout>
