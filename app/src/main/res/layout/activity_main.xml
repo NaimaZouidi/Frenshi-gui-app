@@ -13,17 +13,14 @@
         android:focusableInTouchMode="true"
         android:minWidth="48dp"
         android:minHeight="48dp"
-        android:visibility="visible">
+        android:padding="30dp">
 
         <TextView
-            android:id="@+id/chatText0"
+            android:id="@+id/chat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:minWidth="48dp"
-            android:minHeight="48dp"
-            android:text="@string/empty"
-            android:textAppearance="@android:style/TextAppearance.Material.Body1"
-            android:textSize="18sp" />
+            android:minHeight="48dp" />
     </ScrollView>
 
     <EditText
@@ -62,11 +59,9 @@
             android:layout_weight="0"
             android:background="@color/white"
             android:foreground="@android:drawable/ic_menu_send"
-            android:foregroundGravity="fill"
             android:minWidth="48dp"
             android:minHeight="48dp"
-            android:textSize="18sp" />
-
+            android:textSize="18sp"/>
     </LinearLayout>
 
 </LinearLayout>
