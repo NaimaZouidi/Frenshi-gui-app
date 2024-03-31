@@ -1,10 +1,15 @@
 package com.example.frenshichatbotandroidapp
-
+/**!
+@brief a class holding user input data
+ */
 class UserInput() {
-        private var input: CharSequence = ""
-        private var inputLength = 0
-        fun setUserInput(input: CharSequence){this.input = input}
-        fun setUserInputLength(inputLength: Int){this.inputLength = inputLength}
-        fun getUserInput(): CharSequence {return this.input}
-        fun getUserInputLength():Int{return this.inputLength}
+        private var inputMsg: CharSequence = ""
+        private var inputMsgLength = 0
+        private var msgSendTime = "00:00"
+        fun setUserInput(input: CharSequence){this.inputMsg = input}
+        fun setUserInputLength(inputLength: Int){this.inputMsgLength = inputLength}
+        fun setUserInputSendTime(msgSendTime : String){this.msgSendTime = msgSendTime}
+        fun getUserInput(): CharSequence {return this.inputMsg}
+        fun getUserInputLength():Int{return this.inputMsgLength}
+        fun getUserInputSendTime(): String{return msgSendTime}
 }
