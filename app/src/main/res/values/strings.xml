@@ -1,8 +1,9 @@
 <resources>
     <string name="app_name">FrenshiChatBotAndroidApp</string>
-    <string name="send_button">Send</string>
+    <string name="frenshi"> F </string>
     <string name="user_input_text">Posez-moi une question…</string>
     <string name="typing">Typing…</string>
-    <string name="empty"> </string>
+    <string name="empty"> lorem ipsum dolor sit</string>
+    <string name="default_time"> 00:00 </string>
     <string name="caractere_number_default">0/2000</string>
 </resources>
