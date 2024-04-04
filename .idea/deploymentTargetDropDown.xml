@@ -2,6 +2,18 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
+      <entry key="AppGUIViewPreview">
+        <State />
+      </entry>
+      <entry key="FrenshiAnswerPreview">
+        <State />
+      </entry>
+      <entry key="FrenshiViewPreview">
+        <State />
+      </entry>
+      <entry key="UserInputViewPreview">
+        <State />
+      </entry>
       <entry key="app">
         <State />
       </entry>

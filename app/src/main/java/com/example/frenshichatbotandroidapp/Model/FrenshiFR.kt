@@ -1,9 +1,9 @@
-package com.example.frenshichatbotandroidapp
+package com.example.frenshichatbotandroidapp.Model
 
 /**!
  * brief a class to create Frenshi chatbot FR version
  */
-class FrenshiFR() : Frenshi{
+class FrenshiFR() : Frenshi {
         private val datasetFR = mapOf("GreetingFR" to "Salut! Je m'appelle Frenshi", "GoodbyeDayFR" to "Au revoir")
         private var answerFR : String = ""
         override fun setDataset(){/*To be added*/}

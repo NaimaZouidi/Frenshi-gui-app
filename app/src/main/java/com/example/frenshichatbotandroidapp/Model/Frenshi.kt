@@ -1,4 +1,4 @@
-package com.example.frenshichatbotandroidapp
+package com.example.frenshichatbotandroidapp.Model
 /**!
  * @brief an interface for creating Frenshi chatbot
  */

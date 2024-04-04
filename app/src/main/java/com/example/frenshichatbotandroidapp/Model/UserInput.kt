@@ -1,4 +1,4 @@
-package com.example.frenshichatbotandroidapp
+package com.example.frenshichatbotandroidapp.Model
 /**!
 @brief a class holding user input data
  */
