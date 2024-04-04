@@ -1,18 +1,15 @@
 package com.example.frenshichatbotandroidapp
 
 import android.os.Bundle
-import android.widget.Button
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.recyclerview.widget.RecyclerView
-import com.example.frenshichatbotandroidapp.Model.FrenshiEN
-import com.example.frenshichatbotandroidapp.Model.UserInput
+import com.example.frenshichatbotandroidapp.view.AppGUIView
 
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent{AppGUIView()}
+        setContent{ AppGUIView() }
         /*var chat = ""
         var user = UserInput()
         val frenshiChatbotEN = FrenshiEN()
