@@ -16,6 +16,5 @@ class MainActivity : ComponentActivity() {
         //var frenshiChatbotEN = FrenshiFR()
         val userInputController = UserInputTextController(userInputText)
         setContent{ AppGUIView(userInputController, resources.configuration.orientation)}
-
     }
 }

@@ -1,5 +1,4 @@
 package com.example.frenshichatbotandroidapp.data
-
 /**!
  * brief a class to create Frenshi chatbot FR version
  */
