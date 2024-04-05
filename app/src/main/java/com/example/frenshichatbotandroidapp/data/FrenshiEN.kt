@@ -1,4 +1,4 @@
-package com.example.frenshichatbotandroidapp.Model
+package com.example.frenshichatbotandroidapp.data
 
 /**!
  * brief a class to create Frenshi chatbot EN version
