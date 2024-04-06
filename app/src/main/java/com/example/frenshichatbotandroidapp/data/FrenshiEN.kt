@@ -1,10 +1,10 @@
 package com.example.frenshichatbotandroidapp.data
 /**!
- * brief a class to create Frenshi chatbot EN version
+ * brief a class that implements the EN version of Frenshi chatbot
  */
 class FrenshiEN() : Frenshi {
-        private val datasetEN = mapOf("GreetingDayEN" to "Hi! My name is Frenshi", "GreetingEveningEN" to "Good evening! My name is Frenshi!", "GoodbyeDayEN" to "Goodbye", "GoodbyeEveningEN" to "Good night")
-        private var answerEN : String = "" //attributes should alway be initialized
+        private val datasetEN = mapOf("" to "") //to be added
+        private var answerEN : String = ""
         override fun setDataset(){/*To be added*/}
         override fun getDataset(tag: String): String? {return datasetEN[tag]}
         override fun setAnswer(answer : String?){answerEN = answer?:""}

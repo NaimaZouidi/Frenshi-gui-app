@@ -1,6 +1,6 @@
 package com.example.frenshichatbotandroidapp.data
 /**!
- * brief a class to create Frenshi chatbot FR version
+ * brief a class that implements the FR version of Frenshi chatbot
  */
 class FrenshiFR() : Frenshi{
         private val datasetFR = mapOf("GreetingFR" to "Salut! Je m'appelle Frenshi", "GoodbyeDayFR" to "Au revoir")

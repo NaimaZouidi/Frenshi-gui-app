@@ -18,7 +18,6 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.frenshichatbotandroidapp.R
-import com.example.frenshichatbotandroidapp.control.UserInputTextController
 import com.example.frenshichatbotandroidapp.ui.theme.FrenshiColors
 /**!
  * brief composable function to create the frenshi View
@@ -57,13 +56,13 @@ fun FrenshiView(){
  * brief composable function to create the user input view
  */
 @Composable
-fun UserInputView(userInputTextController: UserInputTextController) {
+fun UserInputView(userMsgTextRetrieved: String, userMsgDateRetrieved: String) {
     Column(
         Modifier
             .padding(start = 60.dp, end = 5.dp)
             .fillMaxSize()) {
-            Text(text = userInputTextController.onUserInputDateRetrieveContent(), textAlign = TextAlign.Center, modifier = Modifier.fillMaxWidth())
-            Text(text = userInputTextController.onUserInputTextRetrieveContent(), color = FrenshiColors.White,
+            Text(text = userMsgDateRetrieved, textAlign = TextAlign.Center, modifier = Modifier.fillMaxWidth())
+            Text(text = userMsgTextRetrieved, color = FrenshiColors.White,
                 textAlign = TextAlign.Justify, modifier = Modifier
                     .padding(end = 20.dp)
                     .clip(RoundedCornerShape(7.dp))

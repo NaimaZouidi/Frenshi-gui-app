@@ -1,6 +1,6 @@
 package com.example.frenshichatbotandroidapp.data
 /**!
- * @brief an interface for creating Frenshi chatbots
+ * @brief an interface for implementing Frenshi chatbots
  */
 interface Frenshi {
 
