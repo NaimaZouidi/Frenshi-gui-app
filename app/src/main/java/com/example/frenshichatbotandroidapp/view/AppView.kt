@@ -23,8 +23,10 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import com.example.frenshichatbotandroidapp.R
 import com.example.frenshichatbotandroidapp.control.*
 import com.example.frenshichatbotandroidapp.data.Message
 import com.example.frenshichatbotandroidapp.data.MessagesList
@@ -38,9 +40,11 @@ import com.example.frenshichatbotandroidapp.ui.theme.FrenshiColors
 fun AppGUIView(messagesListModelView: MessagesList, messagesController: MessagesController, orientation: Int) {
     //a state to store the changes user input
     var userMsgText by rememberSaveable{
-        mutableStateOf("Posez-moi une question..")
+        mutableStateOf("")
     }
-
+    var enableButton by rememberSaveable {
+        mutableStateOf(false)
+    }
     val messagesListItems = messagesListModelView.messagesList //a state to store the change of the list of messages in the chat using Model View architecture
     // a state to store the changes of user input length
     var userMsgTextLength by rememberSaveable {
@@ -69,15 +73,21 @@ fun AppGUIView(messagesListModelView: MessagesList, messagesController: Messages
                 {
                     userMsgText = it //update the user input GUI
                     userMsgTextLength = userMsgText.length //get the length of the user input
-                }
-                , modifier = Modifier.fillMaxWidth())
+                    enableButton=true
+                },
+                placeholder = {
+                    Text(stringResource(id = R.string.default_user_input))
+                },
+                modifier = Modifier.fillMaxWidth())
             Row {
                 Text(text = "$userMsgTextLength/2000", color = FrenshiColors.Gray, textAlign = TextAlign.End,
                     modifier = Modifier.fillMaxWidth(0.9F))
-                IconButton(onClick =
+                IconButton(enabled = enableButton,
+                    onClick =
                 {
                     messagesController.onUserInputTextAdd(userMsgText) //add user input to the list of messages each time the button is clicked
-                    userMsgText = "Posez-moi une question.."
+                    userMsgText = ""
+                    enableButton = false
                 }
                 ) {
                     Icon(Icons.Filled.Send, contentDescription = "")

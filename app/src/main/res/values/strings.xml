@@ -4,5 +4,6 @@
     <string name="typing">Typing…</string>
     <string name="empty"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis erat nunc, tincidunt eget porttitor sed, consequat ac enim. </string>
     <string name="default_time"> 00:00 </string>
+    <string name="default_user_input"> Posez-moi une question.. </string>
     <string name="caractere_number_default">0/2000</string>
 </resources>
