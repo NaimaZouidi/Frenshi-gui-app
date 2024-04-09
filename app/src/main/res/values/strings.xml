@@ -1,9 +1,10 @@
 <resources>
     <string name="app_name">FrenshiChatBotAndroidApp</string>
     <string name="frenshi"> F </string>
-    <string name="typing">Typing…</string>
+    <string name="typingEN">Typing…</string>
     <string name="empty"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis erat nunc, tincidunt eget porttitor sed, consequat ac enim. </string>
     <string name="default_time"> 00:00 </string>
-    <string name="default_user_input"> Posez-moi une question.. </string>
-    <string name="caractere_number_default">0/2000</string>
+    <string name="default_user_inputEN"> Ask me a question.. </string>
+    <string name="Button_content_description_EN"> Send button.. </string>
+    <string name="number_characters_default">0/2000</string>
 </resources>
