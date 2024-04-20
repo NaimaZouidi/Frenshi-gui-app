@@ -1,0 +1,317 @@
+{
+  "intents":
+  [
+   {
+      "tag": "greetingDay EN",
+      "input": ["Hi!", "Hello!", "Hi Frenshi", "Good morning", "Good morning Frenshi", "Hey", "Hey Frenshi", "Hey there!"],
+      "responses": ["Welcome! I'm Frenshi! I'm here to help you with your administrative formalities in France. Administrative formalities can be a real headache, especially for foreign students arriving in a new country. But don't worry! I've got you covered! To get started, please select one of the following options:\nValidate my visa, resident permit CAF or health insurance",
+      "Hello ! I'm Frenshi! I'm here to help you with your administrative formalities in France. Administrative formalities can be a real headache, especially for foreign students arriving in a new country. But don't worry! I've got you covered! To get started, please choose one of the following options: Validate my visa, resident permit, CAF or health insurance",
+      "I'm Frenshi! I'm here to help you with your administrative formalities in France. Administrative formalities can be a real headache, especially for foreign students arriving in a new country. But don't worry! I've got you covered! To get started, please choose from the following options:\nValidate my visa, resident permit, CAF or health insurance"]
+    },
+    {
+      "tag": "greetingEvening EN",
+      "input": ["Good evening", "Good evening Frenshi!"],
+      "responses" : ["Welcome! I'm Frenshi! I'm here to help you with your administrative formalities in France. Administrative formalities can be a real headache, especially for foreign students arriving in a new country. But don't worry! I've got you covered! To get started, please choose one of the following options:\nValidate my visa, resident permit, CAF or social security",
+      "Good evening! I'm Frenshi! I'm here to help you with your administrative formalities in France. Administrative formalities can be a real headache, especially for foreign students arriving in a new country. But don't worry! I've got you covered! To get started, please choose one of the following options:\nValidate my visa, resident permit, CAF or social security",
+      "Hello! I'm Frenshi! I'm here to help you with your administrative formalities in France. Administrative formalities can be a real headache, especially for foreign students arriving in a new country. But don't worry! I've got you covered! To get started, please choose one of the following:\nValidate my visa, resident permit, CAF or social security"]
+    },
+    {
+      "tag": "goodbyeDay EN",
+      "input": ["Okay!", "Okay! Thank you", "Okay! Thank you very much", "Okay! Have a nice day", "Okay! Bye", "Okay! Goodbye", "Great! Have a nice day", "Great! Thank you", "Great! Thank you very much", "Great! Goodbye", "OK", "OK! Bye", "OK! Thank you", "OK! Have a nice day", "Great! Bye", "Bye!", "Bye Frenshi!", "Thank you very much! Goodbye Frenshi", "Oh! Thank you very much", "Oh! Thank you very much Frenshi", "Thank you very much! Have a nice day", "Thank you very much! Have a nice day Frenshi", "Thank you!", "Thank you Frenshi!", "Have a nice day", "Have a nice day Frenshi!"],
+      "responses": ["Goodbye! Don't hesitate if you have any other questions about the administrative formalities in France!",
+      "You're welcome! Don't hesitate to ask me any more questions if you need help or assistance with the administrative formalities in France! See you later.",
+      "Have a nice day! Don't hesitate if you have any more questions about the administrative formalities in France!"]
+    },
+    {
+      "tag": "goodbyeEvening EN",
+      "input": ["Good night", "Okay! Good night", "Great! Good night", "Great! Good night Frenshi", "Okay! Good night Frenshi" , "Thank you a lot! good night", "Thank you very much! Good night Frenshi", "Thank you very much!", "Thank you! Good night Frenshi", "Thank you! Good night", "Good night Frenshi!"],
+      "responses": ["Goodbye! Don't hesitate if you have any other questions about the administrative formalities in France!",
+      "You're welcome! Don't hesitate to ask me any more questions if you need help or assistance with your administrative formalities in France!",
+      "Good night! Don't hesitate to ask me any more questions if you need any help or assistance with the administrative formalities in France! See you later.",
+      "Good night! Don't hesitate if you have any more questions about the administrative formalities in France!"]
+    },
+    {
+      "tag": "Civil state EN",
+      "input": ["Civil state", "What is the civil state?", "Proof civil state", "Which document for civil state?", "Which supporting document for civil state?", "Find out more about the civil state", "I would like to find out more about the civil state?"],
+      "responses":["The supporting document for the civil state may depend on the administrative formality to be carried out, i.e. resident permit or social security. So, please can you specify this in your question. Thank you!",
+      "The required document for the civil state may vary depending on the administrative formality to be carried out, such as an application for a resident permit or social security. So, please can you indicate this in your question. Thank you!"]
+    },
+    {
+      "tag": "Validate visa EN",
+      "input": ["How to validate my visa", "Where to validate my visa", "Validate my visa", "Visa validation", "Find out more about visa validation", "I want to validate my visa"],
+      "responses":["As soon as you arrive in France or at the latest within 3 months of your arrival, you must validate your visa to give it the value of a Residence Permit (VTS). This procedure is compulsory for all visa holders.\nYou must validate your visa online on the ANEF website below:\nhttps://administration-etrangers-en-France.interieur.gouv.fr/particuliers/#/\nOn this site you will enter your visa number, some personal information and pay a fee of €50 for a 'student status' in the form of an electronic tax stamp, in order to receive a validation certificate in PDF format.",
+      "You must validate your visa as soon as you arrive in France or at the latest within 3 months of your arrival in order to give it the Value of a Residence Permit (VTS). All visa holders must carry out this procedure. \nTherefore, you can do this online on the ANEF website below:\nhttps://administration-etrangers-en-France.interieur.gouv.fr/particuliers/#/,\nOn this site, you will enter your visa number, some personal information and pay a fee of €50 for 'student status' in the form of an electronic tax stamp in order to receive a validation certificate in PDF format.",
+      "To give it the value of a Residence Permit (VTS), you must validate your visa as soon as you arrive in France and no later than 3 months after your arrival. All those who have a visa must carry out this procedure online.\nTherefore, you can do so on the ANEF website:https://administration-etrangers-en-France.interieur.gouv.fr/particuliers/#/ On this site, you must enter your visa number, some personal information and pay a fee of €50 for a 'student status' in the form of an electronic tax stamp in order to receive a validation certificate in PDF format."]
+    },
+    {
+      "tag": "Resident permit EN",
+      "input":["resident permit", "What is a resident permit?", "Why a resident permit?", "Which resident permit should I apply for?", "Which resident permit for a foreign student?", "Do I need to apply for a resident permit?", "Find out more about the resident permit", "I would like to find out more about the resident permit"],
+      "responses": ["The resident permit is a document that allows you to move around and cross the borders of the Schengen area. As a foreign student, you need to apply for a 'student' resident permit or 'researcher' resident permit if you have come to do a PhD thesis.",
+      "In France, the resident permit allows you to travel and cross the borders of the Schengen area. As a foreign student, you must apply for a 'student' resident permit or 'researcher' resident permit if you have come to do a PhD thesis.",
+      "The resident permit in France justifies your rights and allows you to travel and cross borders within the Schengen area. As a foreign student, you must apply for a 'student' resident permit or 'researcher' resident permit if you have come to do a PhD thesis."]
+    },
+    {
+      "tag": "Hosting agreement EN",
+      "input":["Hosting agreement", "Why a hosting agreement?", "What is a hosting agreement?", "I would like to learn more about the hosting agreement", "learn more about the hosting agreement"],
+      "responses":["In order to apply for a 'researcher' residence permit, your host laboratory must send you a hosting agreement signed by the head of the host organization and sealed by the institution.\nWarning: Only higher education institutes and certain approved organizations can issue a hosting agreement.",
+      "To apply for a 'researcher' residence permit, your host laboratory must send you a hosting agreement signed by the head of the host organization and stamped by the establishment.\nPlease note: only higher education establishments and certain approved organizations can issue a hosting agreement.",
+      "To apply for a 'researcher', it is essential that your host laboratory sends you a hosting agreement signed by the head of the host organization and sealed by the establishment.\nCaution: Only higher education establishments and certain approved organizations are authorized to issue a hosting agreement."]
+    },
+    {
+      "tag": "Documents for Resident permit EN",
+      "input": ["I would like to know more about the supporting documents to apply for a resident permit", "What are the supporting documents to apply for a resident permit? ", "How do I apply for a resident permit?", "What documents do I need to apply for a resident permit?", "Documents required for a resident permit", "Supporting documents resident permit", "Find out more about the required documents to apply for a resident permit"],
+      "responses": ["Here is the list of supporting documents you will need to apply for a resident permit:\n1. Proof of civil state.\n2. A recent passport photograph less than 3 months old.\n3. Proof of address at least 6 months old.\n4. The reason for your stay.\n5. Financial resources.",
+      "To apply for a resident permit, you will require the following supporting documents:\n1. Proof of civil state.\n2. A recent passport photograph less than 3 months old.\n3. Proof of address at least 6 months old.\n4. The reason for your stay.\n5. Financial resources.",
+      "The following documents are required as supporting documents when applying for a resident permit:\n1. Civil state.\n2. A recent passport photograph less than 3 months old.\n3. Proof of address dating back at least 6 months.\n4. The reason for your stay.\n5. Financial resources."]
+    },
+    {
+      "tag": "Civil state resident permit EN",
+      "input": ["Civil state resident permit", "Proof civil state resident permit", "I would like to know what proof of civil state is required for a resident permit", "Proof of civil state resident permit", "Proof of civil state resident permit", "What is the proof of civil state for a resident permit?", "What supporting document should I provide for civil state when applying for a resident permit?", "Find out about supporting documents for the civil state in order to apply for a resident permit", "Learn more about supporting documents for civil state to apply for a resident permit", "Learn more about the proof of civil state for resident permit"],
+      "responses": ["For civil state you will need a valid resident permit, if you are renewing it, or just your passport. If you do not have a valid resident permit, please attach the pages of your passport relating to the civil state, validity dates, entry stamps, and visas, including your VTS long-stay visa.",
+      "As for the civil state, you will need a valid resident permit, if you are renewing it, or just your passport. In fact, if you do not have a valid resident permit, you can attach the pages of your passport relating to the civil state, dates of validity, entry stamps, and visas including your VTS long-stay visa."]
+    },
+    {
+      "tag": "Identity photograph EN",
+      "input": ["Learn more about the format of identity photograph", "Which identity photograph for a resident permit?", "Identity photograph", "Format of identity photograph", "What is the required format for the identity photograph", "Which identity photograph do I need for my resident permit application?", "Which format of identity photograph for my resident permit application?", "What is the required format of the identity photograph?"],
+      "responses":["The identity photograph is in the form of an e-photo less than 6 months old",
+      "The identity photograph takes the form of an e-photo and must have been taken less than 6 months ago."]
+    },
+    {
+      "tag": "E-photo EN",
+      "input": ["What is an e-photo", "e-photo", "find out more about e-photo?", "I would like to know more about e-photo?"],
+      "responses": ["The e-photo is a dematerialized identity photo with a digital signature",
+      "The e-photo is a digitally signed, dematerialized identity photo."]
+    },
+    {
+      "tag": "Reason for staying EN",
+      "input": ["What supporting documents do I need for my reason for staying?", "I would like to know more about the supporting documents for my reason for staying", "Reason for staying", "find out more about the reason for staying", "What is the reason for staying?", "Which supporting documents do I need for my reason for staying?", "What are the supporting documents for the reason for staying?", "What can I enclose as supporting documents for the reason for staying?"],
+      "responses": ["Regarding the reason for your stay, you will need to provide a certificate of enrolment or proof of re-enrolment from your higher education institute. You will also need:\n1- Your transcripts.\n2- Your most recent diploma. \n3- A certificate of successful completion if it is a renewal.\nIf the resident permit you are applying for is 'researcher', you should also enclose a hosting agreement from the research laboratory where you will be carrying out your PhD thesis.",
+      "As for the reason for your stay, you will need to provide a certificate of enrolment or proof of re-enrolment from your higher education institute. You will also need:\n1 - Your transcripts.\n2- Your most recent diploma.\n3- A certificate of successful completion if you are renewing your resident permit.\n4- If the resident permit you are applying for is 'researcher', you will also need to enclose a hosting agreement from the research laboratory where you will be carrying out your PhD thesis."]
+    },
+     {
+      "tag": "Apply for resident permit EN",
+      "input": ["I want to apply for a resident permit", "How do I apply for a resident permit?", "Where do I apply for a resident permit", "How do I apply for a resident permit", "I am applying for a resident permit", "Resident permit application", "I wish to apply for a resident permit"],
+      "responses": ["If you wish to apply for a resident permit, you can do so via the ANEF website below:\nhttps://administration-etrangers-en-France.interieur.gouv.fr/particuliers/#/",
+      "If you would like to apply for a resident permit, you can do so using the ANEF website below:\nhttps://administration-etrangers-en-France.interieur.gouv.fr/particuliers/#/",
+      "To apply for a resident permit, you can precede via the ANEF website below:\nhttps://administration-etrangers-en-France.interieur.gouv.fr/particuliers/#/"]
+    },
+    {
+      "tag": "Proof of address EN",
+      "input": ["What is proof of address?", "Which proof of address?", "What supporting document for the proof of address?", "What can I enclose as proof of address?", "I would like to know more about the proof of address", "find out more about the proof of address"],
+      "responses": ["The proof of address can take several forms. So, please can you tell me whether you are renting a flat, staying in a hotel or with someone. Thank you!",
+      "The proof of address may depend on your situation. So, please can you tell me if you are renting a flat, staying in a hotel or with someone. Thank you!"]
+    },
+    {
+      "tag": "Student renting a flat EN",
+      "input": ["I am renting a flat", "Yes! I am renting a flat", "I am renting an apartment", "Yes! I am renting an apartement"],
+      "responses":["If you are renting a flat, you can enclose one of the following proofs of address:\n- An electricity, gas, water, internet, fixed or mobile phone bill.\n- A copy of a rent or council tax receipt.",
+      "If you are renting an apartment, you can include one of the following proofs of address:\n- An electricity, gas, water, internet, landline or mobile phone bill. \nA copy of a rent or council tax receipt."]
+    },
+    {
+      "tag": "Student staying at a hotel EN",
+      "input": ["I am staying at a hotel", "I am staying at the hotel", "Yes! I am staying in a hotel", "Yes! I am staying in the hotel"],
+      "responses":["If you are staying in a hotel, you can enclose one of the following proofs of address:\n- A certificate from the hotel.\n- A copy of the bill of the last month.",
+      "If you are staying in a hotel, you can include one of the following proofs of address:\n- A certificate from the hotel.\n- A copy of the bill of the last month."]
+    },
+    {
+      "tag": "Student staying with friends or relatives EN",
+      "input": ["I am staying with someone", "Yes! I am staying with someone", "I am staying with a friend", "Yes! I am staying with a friend", "I am staying with a relative", "Yes! I am staying with a relative"],
+      "responses":["If you are staying with someone, you can enclose one of the following proofs of address:\n- A dated and signed certificate from the host.\n- A copy of their National Identity Card (CIN) or resident permit.\n- Proof of address from the host if the address on their CIN is not up to date.",
+      "If you are living with friends or relatives, you may enclose one of the following proofs of address:\n- A dated and signed certificate from the host.\n- A copy of their National Identity Card (CIN) or resident permit.\n- Proof of address from the host if the address on their CIN is not up to date."]
+    },
+    {
+      "tag": "Supporting documents Financial resources EN",
+      "input": ["Proof of financial resources", "What are the supporting documents for financial resources?", "Supporting documents Financial resources", "Financial resources", "What supporting documents for financial resources?", "Supporting documents Financial resources", "Find out more about supporting documents for financial resources", "I would like to know more about supporting documents for financial resources"],
+      "responses": ["Proof of financial resources may depend on your situation. Please tell me whether you are supported by a third party, hold a scholarship, employed or have sufficient financial resources for your studies. Thank you!",
+      "As for the proof of financial resources, it may depend on your situation. Please let me know if you are supported by a third party, a scholarship holder, an employee or if you have sufficient financial resources for your studies. Thank you!",
+      "For the proof of financial resources, it may depend on your situation. Please let me know if you are supported by a third party, on a scholarship, in employment or if you have sufficient financial resources for your studies. Thank you!"]
+    },
+    {
+      "tag": "Student holding a scholarship EN",
+      "input":["Student holding a scholarship", "I am holding a scholarship", "I have a scholarship", "Yes! I have a scholarship"],
+      "responses":["If you are holding a scholarship, you can enclose a supporting certificate based on your situation. If you are a scholarship holder in your home country, you will need a scholarship certificate from the paying body in your home country. Otherwise, you will need to provide a certificate of funding from the French government or European programme that is supporting your studies",
+      "If you are a scholarship holder, you can enclose a supporting certificate depending on your situation. If you are a grant holder in your home country, you will need a grant certificate from the paying body in your home country. Otherwise, you will need to provide a certificate of funding from the French government or European programme that is funding your studies",
+      "As a scholarship holder, you can enclose a supporting certificate depending on your situation. If you are a grant holder in your home country, you will need a grant certificate from the paying body in your home country. Otherwise, you will need to provide a certificate of funding from the French government or European programme that is supporting your studies"]
+    },
+    {
+      "tag": "Student sponsored a third party EN",
+      "input" : ["I am supported by a third party", "Sponsored by a third party", "Student supported by a third party", "Yes! I am supported by a third party", "My parents take in charge the costs of my studies", "One of my relatives is supporting my studies"],
+      "responses": ["If you are sponsored by a third party (e.i, family, or relative), you can enclose the following certificates:\n- A certificate from the third party's bank showing that regular transfers to your account have been scheduled.\n- A sworn statement that the sums required to reach the required amount of €615/month have been paid, to be enclosed with proof of the third party's identity.",
+      "If you supported for by a third party (e.i, family, or relative), you may provide the following certificates:\n- A certificate from the third party's bank showing that regular transfers to your account have been scheduled.\n- A statement from the third party's honour that he/she has paid the sums required to reach the required amount of €615/month, to be enclosed with proof of identity of the third party.",
+      "As you are being sponsored by a third party (e.i, family, or relative), you can enclose the following certificates:\n- A certificate from the third party's bank showing that regular transfers to your account have been scheduled.\n- A sworn statement that the sums required to reach the required amount of €615/month have been paid, to be enclosed with proof of the third party's identity."]
+    },
+    {
+      "tag": "Employee EN",
+      "input": ["Employee", "Yes! I am an employee", "Yes! I work", "Yes! I have a part time job"],
+      "responses": ["If you are employed, you can provide your last three payslips.",
+      "If you are an employee, you can provide your last three payslips.",
+      "Given that you are an employee, you can provide your last three payslips."]
+    },
+    {
+      "tag": "Student with sufficient financial ressources EN",
+      "input": ["I have sufficient financial resources", "Sufficient financial resources", "I have sufficient resources", "Yes! I have sufficient resources"],
+      "responses": ["If you have sufficient financial resources, you should provide a bank certificate of sufficient credit balance.",
+      "If you have sufficient financial resources you need to provide a bank certificate of sufficient credit balance.",
+      "Given that you have sufficient financial resources, you need to provide a bank certificate of sufficient credit balance."]
+    },
+     {
+      "tag": "CAF EN",
+      "input":["I would like to know more about the CAF", "CAF", "What is the CAF?", "Housing assistance", "Foreign student housing assistance", "Foreign student housing assistance", "What housing assistance is available to a foreign student?"],
+      "responses": ["Foreign students in France can find it difficult to rent a flat, particularly in Paris or the major university towns. The Caisse d'Allocations Familiales (CAF) is a French organisation under private law, present in every French department, which pays out certain benefits designed to combat poverty, such as the RSA or the Prime d'activité, as well as housing assistance such as the APL.",
+      "Like all French students, foreign students can find it difficult to rent a flat, particularly in Paris or the major university towns. The Caisse d'Allocations Familiales (CAF) is a French private-sector body, present in every French department, which pays out certain benefits designed to combat poverty, such as the RSA or the Prime d'activité, as well as housing assistance such as the APL",
+      "Foreign students in France can find it difficult to rent a flat, particularly in large university towns like Paris. The CAF is a private-law organisation located in each French department and offers anti-poverty benefits such as the RSA or the Prime d'activité, as well as housing assistance such as the APL."]
+    },
+    {
+      "tag": "APL EN",
+      "input": ["I would like to know more about the APL", "APL", "What is the APL?", "Can I apply for the APL?", "CAF assistance for foreign students", "What CAF assistance for foreign students", "Find out more about the APL", "Find out more about housing assistance"],
+      "responses": ["The APL is not specifically for students, it is for anyone with a low income. The good news is that even if you're a foreign student, you can apply for APL - it can make all the difference! However, you must meet certain compulsory conditions.",
+      "The APL is for anyone with a low income and is not specifically intended for students. The good news is that you can apply for APL even if you are a foreign student, which can make all the difference! But you have to meet certain conditions.",
+      "The APL is not specifically for students, but for anyone with a low income. The good news is that even if you are a foreign student, you can apply for APL, which can make all the difference! However, you do need to meet certain conditions."]
+    },
+    {
+      "tag": "Apply to APL EN",
+      "input": ["How do I apply for APL?", "APL application", "Submit APL application", "Applying for APL", "APL procedure", "I would like to apply for APL", "Where can I apply for APL?"],
+      "responses": ["Foreign students, like French students, must apply for APL online on the CAF website below:\nhttps://wwwd.caf.fr/wps/portal/caffr/aidesetdemarches/mesdemarches/faireunedemandedeprestation#DAL\nWhen you fill in your application form, you must specify that you are not a beneficiary. As this is your first application, you do not have a personal account on the CAF website. So you need to create a new account. Once this has been done, you will be able to connect to your CAF account online.",
+      "Foreign students, just like French students, must submit their APL application online -on the CAF website below:\nhttps://wwwd.caf.fr/wps/portal/caffr/aidesetdemarches/mesdemarches/faireunedemandedeprestation#DALVousand indicate in your application that you are not a beneficiary. As this is your first application, you do not have a personal account on the CAF website. You will therefore need to create a new account. Once you have done this, you will be able to access your CAF account online."]
+    },
+    {
+      "tag": "APL requirements EN",
+      "input": ["How do I qualify for APL?", "APL conditions", "Am I eligible for APL?", "What are the APL requirements?", "I would like to know more about APL conditions", "Find out more about APL requirements"],
+      "responses": ["To qualify for the APL you must live in your student accommodation for at least 8 months of the year and your accommodation must be covered by a government agreement, such as university halls of residence, HLM hostels, social housing, etc. \nCaution: If your parents also live in France and receive family allowances, this benefit may be withdrawn if you apply for the APL. The rule is the same for French nationals. In addition, if you live with a flatmate and you apply for APL, your flatmate should apply for APL, and if he or she doesn't apply for APL, this may affect your eligibility.",
+      "To be eligible for the APL, you must live in your student accommodation for at least 8 months of the year and your accommodation must be covered by a government agreement, such as university halls of residence, HLM hostels, social housing, etc.\nIf your parents also live in France and receive family allowances, it is possible that this benefit will be withdrawn from them if you apply for an APL. French citizens are subject to the same regulations. In addition, if you live in a shared flat and apply for APL, your flatmate must also apply, otherwise this may affect your eligibility."]
+    },
+    {
+      "tag": "APL calculation EN",
+      "input": ["I would like to simulate my APL prestations", "How is the APL calculated?", "APL calculation", "APL amount", "APL simulation", "APL calculation", "How much is the APL?", "Find out more about the amount of APL"],
+      "responses": ["The APL is calculated based on your flat's rent and your income (parents' income, your own income, family prestations, etc.), so it is not granted automatically, and the amount may depend on your situation. To simulate the amount of APL, please go to the following website:\nhttps://wwwd.caf.fr/wps/portal/caffr/aidesetdemarches/mesdemarches/faireunesimulation/lelogement#/preparation. Thank you!",
+      "The APL is not granted automatically and may depend on your situation. The amount of the APL may vary depending on the amount of your flat's rent and your resources (parents' income, your own income, family prestations, etc.). To simulate the amount of APL, please visit the following website:\nhttps://wwwd.caf.fr/wps/portal/caffr/aidesetdemarches/mesdemarches/faireunesimulation/lelogement#/preparation. Thank you!"]
+    },
+    {
+      "tag": "First APL payment EN",
+      "input": ["When can I receive my first APL payment?", "First APL payment", "When will I receive my first APL payment?", "When will my first APL payment be?", "From when can I receive my first APL payment?", "First APL payment"],
+      "responses": ["As you cannot apply for APL until you have moved in, you will receive your first payment at least one month after you have moved in. For example, if you move in in September your first payment may not start until the beginning of October.",
+      "As you will not be able to apply for APL until you have moved in, you will receive your first payment at least one month after you have moved in. For example, if you move in in September, your first payment cannot start until the beginning of October."]
+    },
+    {
+      "tag": "Supporting documents APL EN",
+      "input":["I would like to know more about the supporting documents needed to apply for APL", "APL supporting documents", "What are the supporting documents to apply for APL", "Learn more about the supporting documents needed to apply for APL"],
+      "responses": ["To apply for APL you must have a French bank account and therefore provide a RIB. You will also need:\n1. Your lease contract.\n2. A certificate of residence, completed by the owner of the flat.\n3. Proof of your income for the last two years. You can provide tax returns for the last two years from your country of origin.\n4. Your national identity card or passport, as well as your birth certificate with a certified translation into French.\nIf you are an EU citizen you will need to provide a certificate of enrolment at the university and your European health insurance card.\nIf you are non-European you will need to enclose a residence permit which is valid for at least the whole of the current academic year as well as proof of health insurance.",
+      "To apply for APL, you must have a bank account in France and provide a RIB. In addition, you must provide:\n1. Your lease contract.\n2. A certificate of residence completed by the owner of the flat.\n3. To prove your income for the last two years, you can provide tax returns for the last two years from your country of origin.\n4. A passport or national identity card, as well as a birth certificate with a certified translation into French.\nIf you are an EU citizen you will need to provide a certificate of enrolment at the university and your European health insurance card.\nIf you are non-European you will need to enclose a residence permit which is valid for at least the whole of the current academic year as well as proof of health insurance."]
+    },
+    {
+      "tag": "Health insurance EN",
+      "input": ["I would like to know more about Health insurance", "Health insurance", "What is health Insurance?", "Ameli", "Do I have health insurance in France?", "Find out more about Health insurance"],
+      "responses": ["Health insurance allows you to have your healthcare costs covered during your stay in France.",
+      "During your stay in France, you can have your healthcare costs covered by the health insurance."]
+    },
+    {
+      "tag": "Apply for health insurance EN",
+      "input": ["I wish to apply for health insurance", "How to apply for health insurance?", "Apply for health insurance", "Where can I apply for health insurance?"],
+      "responses": ["There are three stages to consider in order to apply for health insurance. Please can you tell me which stage you would like to learn about! Thank you!",
+      "When applying for health insurance, there are three stages to take into account. Would you kindly let me know which stage you would like to learn about? Thank you!"]
+    },
+    {
+      "tag": "Supporting documents health insurance EN",
+      "input": ["Supporting documents health insurance?", "I would like to know what documents are needed to apply for health insurance", "What are the needed documents for my health insurance application?", "What are the supporting documents to apply for health insurance?"],
+      "responses": ["The supporting documents required to apply for health insurance are as follows:\n1. Your residence permit.\n2. A certificate of enrolment for the current academic year.\n3. Your IBAN or RIB for any reimbursement of healthcare costs in France.\n4.\nInternational agreements and conventions may provide for other supporting documents, please refer to the social security website below then to the chapter 'Autres documents pour votre inscription selon votre pays d'origine'.\nhttps://www.ameli.fr/llle-et-vilaine/assure/droits-demarches/etudes-stages/étudiant/vous-venez-etudier-en-France#text_77155. Thank you!",
+      "Your application for health insurance will require the following documents:\n1. Your residence permit.\n2. A certificate of enrolment for the current academic year.\n3. For any reimbursement of healthcare costs in France, provide your IBAN or your RIB.\n4. Civil state documents needed to obtain your identification number, also known as your health insurance number.\nOther supporting documents may be provided in accordance with international agreements and conventions. Please refer to the health insurance website below, then the section 'Autres documents pour votre inscription selon votre pays d'origine'.\nhttps://www.ameli.fr/llle-et-vilaine/assure/droits-demarches/etudes-stages/étudiant/vous-venez-etudier-en-France#text_77155. Thank you!"]
+    },
+    {
+      "tag": "First stage health insurance EN",
+      "input": ["Stage 1", "I would like to know more about the first stage of health insurance application", "I would like to know more about the stage 1 of health insurance application", "Stage 1 health insurance", "The first stage of health insurance application", "First stage health insurance", "What is the first stage of health insurance application ?", "Learn more about stage 1 of health insurance application", "Learn more about the first stage of health insurance application"],
+      "responses": ["In this stage, health insurance will ask you to give your personal information and submit the supporting documents in order to create your personal account on the health insurance website below:\nhttps://étudiant-etranger.ameli.fr/#/.",
+      "In the first stage of your application and in order to create your personal account, health insurance will ask you to fill in your personal information and submit the supporting documents on the website below:\nhttps://étudiant-etranger.ameli.fr/#/",
+      "During this stage of your health insurance application, you will fill in your personal information and submit the supporting documents on the health insurance website below:\nhttps://étudiant-etranger.ameli.fr/#/\nin order to create your personal account"]
+    },
+    {
+      "tag": "Civil state health insurance EN",
+      "input": ["Proof of civil state health insurance", "Civil status health insurance", "Civil state health insurance", "I would like to know which proof of civil state do I need for my health insurance application?", "What is the proof of civil state for health insurance application?", "What is the supporting document to provide for civil state in my health insurance application?"],
+      "responses": ["The accepted civil state documents are:\na full copy of the birth certificate.\na birth certificate with filiation (or any document issued by a consulate).\na family record book.\na wedding certificate.",
+      "As for civil state, you will need to provide one of the following documents:\na birth certificate with filiation (or any document issued by a consulate).\na family record book.\na wedding certificate."]
+    },
+    {
+      "tag": "IBAN EN",
+      "input": ["IBAN", "What is IBAN?", "I would like to know more about IBAN", "IBAN", "Learn more about IBAN", "I would like to know more about IBAN"],
+      "responses": ["The IBAN or International Banking Account Number is the bank account identifier that complies with the international standard ISO 13616. In France, it is made up of 27 characters, starting with FR followed by 2 characters and then the 23 digits of the old RIB (bank code, branch code, account number and RIB key).",
+      "The bank account identifier, which complies with the ISO 13616 international standard, is known as the IBAN or international bank account number. In France, it consists of 27 letters, starting with the letter FR, followed by 2 letters and then the 23 digits of the old RIB (bank code, branch code, account number and RIB key).",
+      "The bank account identifier, which complies with the ISO 13616 international standard, is known as the International Bank Account Number or IBAN. In France, it is made up of 27 digits, starting with FR followed by 2 characters and then the 23 digits of the old RIB (bank establishment code, branch code, account number and the RIB key)."]
+    },
+    {
+      "tag": "Second stage health insurance EN",
+      "input": ["Stage 2", "I would like to know more about the second stage of health insurance application", "I would like to know more about the stage 2 of health insurance application", "Stage 2 health insurance", "The second stage of health insurance application", "Second stage health insurance", "What is the second stage of health insurance application?", "Learn more about stage 2 of health insurance application", "Learn more about the second stage of health insurance application"],
+      "responses": ["To ensure that your healthcare costs are properly covered in France, it is essential that you download your provisional certificate from your personal account on the health insurance website below:\nhttps://étudiant-etranger.ameli.fr.\nThis will enable you to:\n- Declare a preferred doctor.\n- Apply for supplementary health insurance.",
+      "For the second stage of your health insurance application, you should download your provisional certificate from your personal account on the health insurance website below:\nhttps://étudiant-etranger.ameli.fr\nto ensure that your healthcare costs are covered accordongly by the health insurance. You can also in using this certificate:\nDeclare a preferred doctor.\nApply for supplementary health insurance.",
+      "As for the second stage of your health insurance application, you should download your provisional certificate from your personal account on the health insurance website below:\nhttps://étudiant-etranger.ameli.fr\nin order to ensure that your healthcare costs are covered accordongly by the health insurance.\nIn fact, this allows you to:\nDeclare a preferred doctor. \nApply for supplementary health insurance."]
+    },
+    {
+      "tag": "Third stage health insurance EN",
+      "input": ["Stage 3", "I would like to know more about the third stage of health insurance application", "I would like to know more about the stage 3 of health insurance application", "Stage 3 health insurance", "The third stage of health insurance application", "Third stage health insurance", "What is the third stage of health insurance application?", "Learn more about stage 3 of health insurance application", "Learn more about the third stage of health insurance application"],
+      "responses": ["As soon as you have obtained your national insurance number, you can:\n- Download your definitive certificate from your personal account on the health insurance website below:\nhttps:\nétudiant-etranger.ameli.fr.\n- Receive a form to complete and return in order to request your health insurance card.\n- Open an health insurance account.\nDownload the Ameli mobile application.",
+      "For the third stage of your health insurance application, you will be able to download your final certificate from your personal account on the health insurance website below:\nhttps://étudiant-etranger.ameli.fr.\nIn addition, after receiving your national insurance number, you will also receive a form to fill in and return by post to open an Ameli account so you can order your health insurance card using the Ameli mobile application.",
+      "Once you have received your national insurance number, you will be able to download your definitive certificate from your personal account on the health insurance website below:\nhttps://étudiant-etranger.ameli.fr.\nIn order to request a health insurance card via the Ameli mobile application, you will also receive a form to fill in and return by post to open an Ameli account."]
+    },
+    {
+      "tag": "Preferred doctor EN",
+      "input": ["I would like to know more about the preferred doctor", "Preferred doctor", "Why a preferred doctor?", "What is a preferred doctor?", "What is the purpose of having a preferred doctor?"],
+      "responses": ["A preferred doctor guarantees you better medical care and better reimbursement from the health insurance system.",
+      "A preferred doctor gives you better medical care and better reimbursement from the health insurance system.",
+      "To get better reimbursement for your care and to have better medical follow-up, you need to designate a preferred doctor."]
+    },
+    {
+      "tag": "Supplementary health insurance EN",
+      "input": ["Supplementary health insurance", "Why should I have supplementary health insurance?", "What is supplementary health insurance?", "Why having a supplementary health insurance?", "Find out more about supplementary health insurance", "I would like to find out more about supplementary health insurance"],
+      "responses": ["Supplementary health insurance is designed to increase your National Health Insurance reimbursements and reduce your out-of-pocket expenses, which can be around 30%.",
+      "To reduce your out-of-pocket expenses, you can apply for supplementary health insurance to increase your reimbursements, which are typically around 70%.",
+      "Health insurance allows you to increase your reimbursements by applying for a supplementary health insurance. This later helps to reduce your out-of-pocket expenses, which are typically around 30%."]
+    },
+    {
+      "tag": "Apply for Supplementary health insurance EN",
+      "input": ["I want to apply for supplementary health insurance", "How do I apply for supplementary health insurance", "How do I apply for student health insurance", "How do I apply for supplementary health insurance", "Where do I apply for supplementary health insurance"],
+      "responses": ["As a foreign student, you can benefit, under certain conditions, from completely free supplementary health insurance by applying through your Ameli account, 'My procedures' then 'Supplementary health insurance'. Don't forget to provide your full tax return or income tax return.",
+      "As a foreign student, health insurance can grant you, under certain conditions, a supplementary health insurance completely free of charge. To request this, please appky through your Ameli account, 'My procedures' then 'Supplementary health insurance'. Don't forget to provide your full tax return or income tax return.",
+      "Foreign students can benefit, under certain conditions, from a completely free supplementary health insurance. To apply, please go to your Ameli account, 'My procedures' then 'Supplementary health insurance'. Don't forget to provide your full tax notice or income tax return with you."]
+    },
+    {
+      "tag": "Health insurance account EN",
+      "input": ["I would like to know more about the Ameli account", "Ameli account", "What is the purpose of the Ameli account", "What is the Ameli account", "Why should I have an Ameli account", "Find out more about the Ameli account"],
+      "responses": ["The Ameli account allows you to track your reimbursements, change your personal information, ask your questions via ameliBot, which presents the health insurance chatbot.",
+      "With your Ameli account, you can track your reimbursements, change your personal information and ask questions with ameliBot, the health insurance chatbot.",
+      "Health insurance has made a personal account available to you. This allows you to track your reimbursements, change your personal details and ask questions with ameliBot, the health insurance chatbot."]
+    },
+    {
+      "tag": "Health insurance card EN",
+      "input": ["I would like to know more about the health insurance card", "Health insurance card", "What is the health insurance card", "What is the health insurance card used for", "Why should I have a health insurance card?"],
+      "responses": ["Your health insurance card contains all the information you need to have your healthcare costs reimbursed in France. By presenting it to your doctor, you can be sure of being automatically reimbursed within a week, without having to send in a medical claim form.\nPlease note: you need to update your health insurance card once a year!",
+      "In France, your health insurance card contains all the information you need to reimburse your healthcare costs. By presenting it to your doctor, you can be sure of being automatically reimbursed within a week, without having to send in a treatment form.\nCaution: your health insurance card must be updated once a year!",
+      "Your carte Vitale contains all the information you need to reimburse your healthcare costs in France. You can be sure of being automatically reimbursed within a week, without having to send in a medical claim form, just by presenting it to your doctor.\nWarning: your health insurance card must be updated onec a year!"]
+    },
+    {
+      "tag": "Apply for health insurance card EN",
+      "input": ["I want to order a health insurance card", "Order my health insurance card", "Where can I order my health insurance card?", "How can I order health insurance card?", "How can I get a health insurance card?"],
+      "responses": ["You can order your health insurance card from your Ameli account, 'My procedures', then 'Health insurance card'.",
+      "You can request your health insurance from your Ameli account, by clicking on 'My procedures' then 'Health insurance card'.",
+      "To request your health insurance, you can use your Ameli account. Navigate to 'My procedures' then select 'Health insurance card'."]
+    },
+    {
+      "tag": "Update health insurance card EN",
+      "input": ["I want to update my health insurance card", "Update my health insurance card", "How do I update my health insurance card?", "Where can I update my health insurance card?", "I wish to updete my my health insurance card"],
+      "responses": ["To update your health insurance card, please go to the nearest pharmacy.",
+      "Please go to nearest pharmacy to update your health insurance card.",
+      "In order to update your health insurance card, please go to your nearest pharmacy."]
+    },
+    {
+      "tag": "Download Ameli app EN",
+      "input": ["I want to download the Ameli app", "Ameli app", "How to download the Ameli app", "Download the Ameli app", "Where to download the Ameli app", "Ameli app", "Download the Ameli application", "Where to download the Ameli application", "How to download the Ameli application"],
+      "responses": ["The Ameli app can be downloaded from the google play store via the link below:\nhttps://play.google.com/store/apps/datasafety?id=fr.cnamts.it.activity&hl=fr&gl=US",
+      "The Ameli app can be downloaded from the Google Play Store using the link below:\nhttps://play.google.com/store/apps/datasafety?id=fr.cnamts.it.activity&hl=fr&gl=US",
+      "If you wish to download the Ameli application, you can do so via the link below:\nhttps://play.google.com/store/apps/datasafety?id=fr.cnamts.it.activity&hl=fr&gl=US"]
+    },
+    {
+      "tag": "unknown EN",
+      "input": ["Null", "Noodle", "Call me", "Well", "Oops", "Fine", "How are you?", "You're welcome", "Not this", "Are you kidding me!", "Are you joking!", "No!", "Nope!", "Stop!", "Stop! please", "lol", "None sense", "It's incorrect", "That's okay", "I don't understand", "You're dumb", "Oppa", "Nothing", "What?!", "That's it", "Boom!!", "You're stupid", "Nothing at all", "Oh no!"],
+      "responses": ["Sorry for the inconvenience! But I couldn't find any answer to your question. Please try the following options:\nValidate my visa, resident permit, CAF or health insurance. Thank you!",
+      "Excuse me! But I can't find any answer to your question. Please consider the following suggestions:\nValidate my visa, resident permit, CAF or health insurance. Thank you!",
+      "Oops! I can't find any answer to your question. Please try the following suggestions:\nValidate my visa, resident permit, CAF or health insurance. Thank you!"]
+   }
+  ]
+ }
