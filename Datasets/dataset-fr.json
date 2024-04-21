@@ -1,19 +1,5 @@
 {"intents":
 [
-   {
-      "tag": "greetingDay FR",
-      "input": ["Salut !", "Salut Frenshi", "Bonjour", "Bonjour Frenshi", "Coucou", "Coucou Frenshi !"],
-      "responses" : ["Bienvenue ! Je suis Frenshi ! je suis là pour vous aider et accompagner dans vos démarches administratives en France. Les démarches administratives sont souvent un vrai casse-tête, d'autant plus pour les étudiants étrangers arrivant dans un nouveau pays. Mais ne vous inquiétez pas ! Je suis là pour vous ! Pour commencer veuillez choisir parmi les propositions suivantes:\nValider mon visa, titre de séjour, CAF ou sécurité sociale",
-      "Bonjour ! Je suis Frenshi ! je suis là pour vous aider et accompagner dans vos démarches administratives en France. Les démarches administratives sont souvent un vrai casse-tête, d'autant plus pour les étudiants étrangers arrivant dans un nouveau pays. Mais ne vous inquiétez pas ! Je suis là pour vous ! Pour commencer veuillez choisir parmi les propositions suivantes:\nValider mon visa, titre de séjour CAF ou sécurité sociale",
-      "Oh salut ! Je suis Frenshi ! je suis là pour vous aider et accompagner dans vos démarches administratives en France. Les démarches administratives sont souvent un vrai casse-tête, d'autant plus pour les étudiants étrangers arrivant dans un nouveau pays. Mais ne vous inquiétez pas ! Je suis là pour vous ! Pour commencer veuillez choisir parmi les propositions suivantes:\nValider mon visa, titre de séjour CAF ou sécurité sociale"]
-    },
-    {
-      "tag": "greetingEvening FR",
-      "input": ["Bonsoir", "Bonsoir Frenshi!"],
-      "responses" : ["Bienvenue ! Je suis Frenshi! je suis là pour vous aider et accompagner dans vos démarches administratives en France. Les démarches administratives sont souvent un vrai casse-tête, d'autant plus pour les étudiants étrangers arrivant dans un nouveau pays. Mais ne vous inquiétez pas ! Je suis là pour vous ! Pour commencer veuillez choisir parmi les propositions suivantes:\nCAF, titre de séjour ou sécurité sociale",
-      "Bonsoir ! Je suis Frenshi ! je suis là pour vous aider et accompagner dans vos démarches administratives en France. Les démarches administratives sont souvent un vrai casse-tête, d'autant plus pour les étudiants étrangers arrivant dans un nouveau pays. Mais ne vous inquiétez pas ! Je suis là pour vous ! Pour commencer veuillez choisir parmi les propositions suivantes:\nValider mon visa, titre de séjour CAF ou sécurité sociale",
-      "Oh salut ! Je suis Frenshi ! je suis là pour vous aider et accompagner dans vos démarches administratives en France. Les démarches administratives sont souvent un vrai casse-tête, d'autant plus pour les étudiants étrangers arrivant dans un nouveau pays. Mais ne vous inquiétez pas ! Je suis là pour vous ! Pour commencer veuillez choisir parmi les propositions suivantes:\nValider mon visa, titre de séjour CAF ou sécurité sociale"]
-    },
     {
       "tag": "goodbyeDay FR",
       "input": ["ça marche!","ça marche! Bonne journée", "ça marche ! Merci", "ça marche ! Au revoir", "ça marche ! Merci beaucoup", "Ca marche!", "Ca marche ! Bonne journée", "Ca marche ! Merci", "Ca marche ! Au revoir", "Ca marche ! Merci beaucoup", "Top !", "Top ! Bonne journée", "Top ! Merci", "Top ! Merci beaucoup", "Top ! Au revoir", "D'accord", "D'accord ! Au revoir !", "D'accord! Merci !", "D'accord ! Merci beaucoup", "D'accord ! Bonne journée", "Super !", "Super ! Merci !", "Super ! merci beaucoup", "Super ! Au revoir", "Super ! bonne journée", "Au revoir !", "Au revoir Frenshi !", "Merci beaucoup ! Au revoir", "Merci beaucoup ! Au revoir Frenshi", "Oh ! Merci beaucoup", "Oh ! Merci beaucoup Frenshi", "Merci beaucoup ! Bonne journée", "Merci beaucoup ! Bonne journée Frenshi", "Merci !", "Merci Frenshi !", "Bonne journée", "Bonne journée Frenshi !"],

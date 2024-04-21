@@ -1,20 +1,6 @@
 {
   "intents":
   [
-   {
-      "tag": "greetingDay EN",
-      "input": ["Hi!", "Hello!", "Hi Frenshi", "Good morning", "Good morning Frenshi", "Hey", "Hey Frenshi", "Hey there!"],
-      "responses": ["Welcome! I'm Frenshi! I'm here to help you with your administrative formalities in France. Administrative formalities can be a real headache, especially for foreign students arriving in a new country. But don't worry! I've got you covered! To get started, please select one of the following options:\nValidate my visa, resident permit CAF or health insurance",
-      "Hello ! I'm Frenshi! I'm here to help you with your administrative formalities in France. Administrative formalities can be a real headache, especially for foreign students arriving in a new country. But don't worry! I've got you covered! To get started, please choose one of the following options: Validate my visa, resident permit, CAF or health insurance",
-      "I'm Frenshi! I'm here to help you with your administrative formalities in France. Administrative formalities can be a real headache, especially for foreign students arriving in a new country. But don't worry! I've got you covered! To get started, please choose from the following options:\nValidate my visa, resident permit, CAF or health insurance"]
-    },
-    {
-      "tag": "greetingEvening EN",
-      "input": ["Good evening", "Good evening Frenshi!"],
-      "responses" : ["Welcome! I'm Frenshi! I'm here to help you with your administrative formalities in France. Administrative formalities can be a real headache, especially for foreign students arriving in a new country. But don't worry! I've got you covered! To get started, please choose one of the following options:\nValidate my visa, resident permit, CAF or social security",
-      "Good evening! I'm Frenshi! I'm here to help you with your administrative formalities in France. Administrative formalities can be a real headache, especially for foreign students arriving in a new country. But don't worry! I've got you covered! To get started, please choose one of the following options:\nValidate my visa, resident permit, CAF or social security",
-      "Hello! I'm Frenshi! I'm here to help you with your administrative formalities in France. Administrative formalities can be a real headache, especially for foreign students arriving in a new country. But don't worry! I've got you covered! To get started, please choose one of the following:\nValidate my visa, resident permit, CAF or social security"]
-    },
     {
       "tag": "goodbyeDay EN",
       "input": ["Okay!", "Okay! Thank you", "Okay! Thank you very much", "Okay! Have a nice day", "Okay! Bye", "Okay! Goodbye", "Great! Have a nice day", "Great! Thank you", "Great! Thank you very much", "Great! Goodbye", "OK", "OK! Bye", "OK! Thank you", "OK! Have a nice day", "Great! Bye", "Bye!", "Bye Frenshi!", "Thank you very much! Goodbye Frenshi", "Oh! Thank you very much", "Oh! Thank you very much Frenshi", "Thank you very much! Have a nice day", "Thank you very much! Have a nice day Frenshi", "Thank you!", "Thank you Frenshi!", "Have a nice day", "Have a nice day Frenshi!"],
