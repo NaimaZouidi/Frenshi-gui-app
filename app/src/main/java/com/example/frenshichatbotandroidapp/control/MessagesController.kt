@@ -5,21 +5,24 @@ import java.text.SimpleDateFormat
 import java.util.Calendar
 
 /**!
- * brief class that implements the controller for the list of message
+ * A class implementing a controller for the list of messages
  */
 class MessagesController(private var messagesList: MessagesList) {
-        fun onUserInputTextAdd(userMsgText: String){
+        fun onMessageAdd(messageSender: String, messageText: String){
             val c = Calendar.getInstance()
             val date = c.time
             val sdf = SimpleDateFormat("HH:mm")
             val formatedDate = sdf.format(date)
-            messagesList.addMessageToList(userMsgText, formatedDate)
+            messagesList.addMessageToList(messageSender, messageText, formatedDate)
         }
-        fun onUserInputDateRetrieveContent(message: Message?): String{
-            return message?.getMessageSendTime()?: ""
+        fun onMessageRetrieveSender(message: Message?):String{
+            return message?.getMessageSender()?:""
         }
-        fun onUserInputTextRetrieveContent(message: Message?):String{
+        fun onMessageRetrieveContent(message: Message?):String{
             return message?.getMessageText()?: ""
+        }
+        fun onMessageRetrieveDate(message: Message?): String{
+        return message?.getMessageSendTime()?: ""
         }
 
 }

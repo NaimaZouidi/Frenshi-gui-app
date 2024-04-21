@@ -4,11 +4,11 @@ import androidx.compose.runtime.mutableStateListOf
 import androidx.lifecycle.ViewModel
 
 /**!
- * @brief a class that implements a list of message
+ * A class implementing a list of message
  */
 class MessagesList : ViewModel(){
     val messagesList = mutableStateListOf<Message>()
-    fun addMessageToList(messageText: String, messageSendTime: String){
-        messagesList.add(Message(messageText, messageSendTime))
+    fun addMessageToList(messageSender: String, messageText: String, messageSendTime: String){
+        messagesList.add(Message(messageSender, messageText, messageSendTime))
     }
 }

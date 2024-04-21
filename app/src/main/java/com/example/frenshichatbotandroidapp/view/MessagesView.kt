@@ -18,42 +18,42 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.frenshichatbotandroidapp.R
-import com.example.frenshichatbotandroidapp.ui.theme.FrenshiColors
+import com.example.frenshichatbotandroidapp.ui.theme.FrenShiColors
 /**!
- * brief composable function to create the frenshi View
+ * Composable function to create the frenshi View
  */
 @Composable
-fun FrenshiView(){
+fun FrenShiView(frenShiResponseText: String, frenShiResponseDate: String) {
     Column(
         Modifier
             .padding(5.dp)
             .fillMaxSize()) {
-        Text(text = stringResource(id = R.string.default_time), textAlign = TextAlign.Center, modifier = Modifier.fillMaxWidth())
+        Text(text = frenShiResponseDate, textAlign = TextAlign.Center, modifier = Modifier.fillMaxWidth())
         Row(modifier = Modifier.padding(start = 60.dp)) {
                 Text(
                     text = stringResource(id = R.string.frenshi), fontSize = 20.sp,
-                    color = FrenshiColors.White, modifier = Modifier.drawBehind {
+                    color = FrenShiColors.White, modifier = Modifier.drawBehind {
                         drawCircle(
-                            color = FrenshiColors.Gray,
+                            color = FrenShiColors.Gray,
                             radius = this.size.maxDimension
                         )
                     }
                 )
                 Text(
-                    text = stringResource(id = R.string.empty),
-                    color = FrenshiColors.White,
+                    text = frenShiResponseText,
+                    color = FrenShiColors.White,
                     textAlign = TextAlign.Justify,
                     modifier = Modifier
                         .padding(start = 30.dp, end = 20.dp)
                         .clip(RoundedCornerShape(5.dp))
-                        .background(FrenshiColors.Gray)
+                        .background(FrenShiColors.Gray)
                         .wrapContentSize()
                 )
             }
     }
 }
 /**!
- * brief composable function to create the user input view
+ * Composable function to create the user input view
  */
 @Composable
 fun UserInputView(userMsgTextRetrieved: String, userMsgDateRetrieved: String) {
@@ -62,11 +62,11 @@ fun UserInputView(userMsgTextRetrieved: String, userMsgDateRetrieved: String) {
             .padding(start = 60.dp, end = 5.dp)
             .fillMaxSize()) {
             Text(text = userMsgDateRetrieved, textAlign = TextAlign.Center, modifier = Modifier.fillMaxWidth())
-            Text(text = userMsgTextRetrieved, color = FrenshiColors.White,
+            Text(text = userMsgTextRetrieved, color = FrenShiColors.White,
                 textAlign = TextAlign.Justify, modifier = Modifier
                     .padding(end = 20.dp)
                     .clip(RoundedCornerShape(7.dp))
-                    .background(FrenshiColors.Blue)
+                    .background(FrenShiColors.Blue)
                     .wrapContentSize())
     }
 }
