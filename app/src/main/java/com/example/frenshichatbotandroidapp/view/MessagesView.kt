@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.drawBehind
@@ -42,12 +43,12 @@ fun FrenShiView(frenShiResponseText: String, frenShiResponseDate: String) {
                 Text(
                     text = frenShiResponseText,
                     color = FrenShiColors.White,
-                    textAlign = TextAlign.Justify,
+                    textAlign = TextAlign.Left,
                     modifier = Modifier
-                        .padding(start = 30.dp, end = 20.dp)
+                        .padding(start = 30.dp, end = 25.dp)
                         .clip(RoundedCornerShape(5.dp))
                         .background(FrenShiColors.Gray)
-                        .wrapContentSize()
+                        .wrapContentSize().padding(9.dp)
                 )
             }
     }
@@ -59,14 +60,14 @@ fun FrenShiView(frenShiResponseText: String, frenShiResponseDate: String) {
 fun UserInputView(userMsgTextRetrieved: String, userMsgDateRetrieved: String) {
     Column(
         Modifier
-            .padding(start = 60.dp, end = 5.dp)
+            .padding(start = 100.dp, end = 25.dp)
             .fillMaxSize()) {
             Text(text = userMsgDateRetrieved, textAlign = TextAlign.Center, modifier = Modifier.fillMaxWidth())
             Text(text = userMsgTextRetrieved, color = FrenShiColors.White,
-                textAlign = TextAlign.Justify, modifier = Modifier
-                    .padding(end = 20.dp)
+                textAlign = TextAlign.Left, modifier = Modifier
+                    .padding(end = 25.dp)
                     .clip(RoundedCornerShape(7.dp))
                     .background(FrenShiColors.Blue)
-                    .wrapContentSize())
+                    .wrapContentSize().padding(9.dp))
     }
 }
