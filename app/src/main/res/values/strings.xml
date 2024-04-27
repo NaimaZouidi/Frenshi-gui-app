@@ -2,6 +2,7 @@
     <string name="app_name" translatable="false">FrenshiChatBotAndroidApp</string>
     <string name="frenshi" translatable="false"> F </string>
     <string name="typingEN">Typing…</string>
+    <string name="greeting_frenShiEN">Welcome! I\'m Frenshi! I\'m here to help you with your administrative formalities in France. Administrative formalities can be a real headache, especially for foreign students arriving in a new country. But don\'t worry! I\'ve got you covered! To get started, please select one of the following options:\nValidate my visa, resident permit, CAF or health insurance.</string>
     <string name="empty" translatable="false"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis erat nunc, tincidunt eget porttitor sed, consequat ac enim. </string>
     <string name="default_time" translatable="false"> 00:00 </string>
     <string name="default_user_inputEN"> Ask me a question.. </string>

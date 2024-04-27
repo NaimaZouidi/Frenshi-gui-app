@@ -1,12 +1,16 @@
 package com.example.frenshichatbotandroidapp.data
-/**!
- * @brief an interface for implementing Frenshi chatbots
- */
-interface Frenshi {
 
-    fun setDataset()
-    fun getDataset(tag: String): String?
-    fun setAnswer(answer: String?)
-    fun getAnswer(): String
-    fun predictAnswer(userInput: String) : String
+import org.tensorflow.lite.Interpreter
+
+/**!
+ * An interface for implementing FrenShi chatbots
+ */
+interface FrenShi {
+    fun initPrediction()
+    suspend fun loadModel(): Interpreter?
+    suspend fun loadVocab() : HashMap<String,Int>?
+    fun convertToLowercaseAndRemovePunctuation(userInputText : String):String
+    fun tokenizeUserInput(userInputText : String) : IntArray
+    fun padSequence(sequence : IntArray) : IntArray
+    fun predictResponse(userInputText: String) : Float
 }

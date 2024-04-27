@@ -1,6 +1,11 @@
+import com.android.build.api.dsl.AaptOptions
+import com.android.build.api.dsl.AndroidResources
+
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    id("kotlin-kapt")
+    kotlin("plugin.serialization") version "1.9.23"
 }
 
 android {
@@ -28,6 +33,9 @@ android {
                 "proguard-rules.pro"
             )
         }
+        aaptOptions {
+            noCompress("tflite")
+        }
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
@@ -51,7 +59,15 @@ android {
 }
 
 dependencies {
-    implementation ("androidx.compose.runtime:runtime-livedata:1.5.1")
+    implementation("io.ktor:ktor-client-android:2.1.3")
+    implementation("io.ktor:ktor-client-content-negotiation:2.1.3")
+    implementation("io.ktor:ktor-serialization-kotlinx-json:2.1.3")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.3")
+    implementation("androidx.room:room-runtime:2.4.3")
+    kapt("androidx.room:room-compiler:2.4.3")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
+    implementation ("androidx.compose.runtime:runtime-livedata:1.6.4")
+    implementation ("org.tensorflow:tensorflow-lite:+")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)

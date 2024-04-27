@@ -8,11 +8,15 @@ import java.util.Calendar
  * A class implementing a controller for the list of messages
  */
 class MessagesController(private var messagesList: MessagesList) {
-        fun onMessageAdd(messageSender: String, messageText: String){
+        fun onCreateDate(): String{
             val c = Calendar.getInstance()
             val date = c.time
             val sdf = SimpleDateFormat("HH:mm")
             val formatedDate = sdf.format(date)
+            return formatedDate
+        }
+        fun onMessageAdd(messageSender: String, messageText: String){
+            val formatedDate = onCreateDate()
             messagesList.addMessageToList(messageSender, messageText, formatedDate)
         }
         fun onMessageRetrieveSender(message: Message?):String{

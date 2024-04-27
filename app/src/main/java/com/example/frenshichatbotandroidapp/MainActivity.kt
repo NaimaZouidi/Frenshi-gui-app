@@ -1,17 +1,18 @@
 package com.example.frenshichatbotandroidapp
-//import com.example.frenshichatbotandroidapp.data.FrenshiDatabaseFR
+
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.room.Room
+import com.example.frenshichatbotandroidapp.control.FrenshiFRController
 import com.example.frenshichatbotandroidapp.control.MessagesController
-import com.example.frenshichatbotandroidapp.data.FrenShiRecordNetwork
 import com.example.frenshichatbotandroidapp.data.FrenShiDataNetwork
 import com.example.frenshichatbotandroidapp.data.FrenShiENDatabase
+import com.example.frenshichatbotandroidapp.data.FrenShiFR
+import com.example.frenshichatbotandroidapp.data.FrenShiRecordNetwork
 import com.example.frenshichatbotandroidapp.data.FrenshiFRDatabase
-//import com.example.frenshichatbotandroidapp.data.FrenshiDatabaseFR
 import com.example.frenshichatbotandroidapp.data.MessagesList
 import com.example.frenshichatbotandroidapp.view.AppGUIView
 import io.ktor.client.HttpClient
@@ -41,10 +42,13 @@ class MainActivity : ComponentActivity() {
     .build() //build a room database for FrenShi FR version
     }
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+        val frenShiFR = FrenShiFR(this, "model-fr.tflite", "word-dict-fr.json")
         val messagesListModelView : MessagesList by viewModels() //instantiate the Model View for the messages
         val messagesController = MessagesController(messagesListModelView) //instantiate the messages controller
-        setContent{ AppGUIView(messagesListModelView, messagesController, resources.configuration.orientation)} //call the view composable function to render the GUI
+        val frenShiFRController = FrenshiFRController(frenShiFR)
+        super.onCreate(savedInstanceState)
+        setContent{AppGUIView(messagesListModelView, messagesController, frenShiFRController)} //call the view composable function to render the GUI
+        frenShiFRController.onFrenShiInit()
         lifecycleScope.launch(Dispatchers.IO) {
             val (frenShiFRDataNetwork, frenShiENRecordsNetwork) = fetchFrenShiDatabasesFromServer()
             saveFrenshiDataRecordsToDatabase(frenShiFRDataNetwork, frenShiENRecordsNetwork)

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FrenshiChatBotAndroidApp</string>
+    <string name="typingEN">Entrain d\'ecrire...</string>
+    <string name="default_user_inputEN">Posez moi une question..</string>
+    <string name="Button_content_description_EN">Button envoyer</string>
+    <string name="greeting_frenShiEN">Bienvenue ! Je suis Frenshi ! je suis là pour vous aider et accompagner dans vos démarches administratives en France. Les démarches administratives sont souvent un vrai casse-tête, d\'autant plus pour les étudiants étrangers arrivant dans un nouveau pays. Mais ne vous inquiétez pas ! Je suis là pour vous ! Pour commencer veuillez choisir parmi les propositions suivantes:\nValider mon visa, titre de séjour, CAF ou sécurité sociale.</string>
+</resources>
