@@ -220,7 +220,7 @@
       "input": ["Bank details", "What is bank details?", "I would like to know more about bank details", "Learn more about bank details","I would like to know more about bank details", "Why do I need bank details?"],
       "responses": ["Bank details is a document used in France to identify the holder of a bank account and specify his or her banking details. Thanks to this document, you can inform your counterparties (transfer issuers, creditors who are paid by direct debit, etc.) of your bank address in order to receive transfers or pay certain expenses by direct debit, for example.",
       "In France, bank statement or details is a document used to identify the holder of a bank account and specify his or her banking details. You can use this document to communicate your bank address to your counterparties (transfer issuers, creditors who are paid by direct debit, etc.) in order to receive transfers or pay fees by direct debit, for example.",
-      “In France, bank details, also known as bank statement, is a document that identifies the holder of a bank account and specifies his or her banking details. You can use this document to inform your counterparties (transfer issuers, creditors who are paid by direct debit...) of your bank address in order to receive transfers or pay fees by direct debit, for example.”]
+      "In France, bank details, also known as bank statement, is a document that identifies the holder of a bank account and specifies his or her banking details. You can use this document to inform your counterparties (transfer issuers, creditors who are paid by direct debit...) of your bank address in order to receive transfers or pay fees by direct debit, for example."]
     },
     {
       "tag": "IBAN EN",
