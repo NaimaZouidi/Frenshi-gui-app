@@ -1,14 +1,14 @@
 {"intents":
 [
     {
-      "tag": "goodbyeDay FR",
+      "tag": "GoodbyeDay FR",
       "input": ["ça marche!","ça marche! Bonne journée", "ça marche ! Merci", "ça marche ! Au revoir", "ça marche ! Merci beaucoup", "Ca marche!", "Ca marche ! Bonne journée", "Ca marche ! Merci", "Ca marche ! Au revoir", "Ca marche ! Merci beaucoup", "Top !", "Top ! Bonne journée", "Top ! Merci", "Top ! Merci beaucoup", "Top ! Au revoir", "D'accord", "D'accord ! Au revoir !", "D'accord! Merci !", "D'accord ! Merci beaucoup", "D'accord ! Bonne journée", "Super !", "Super ! Merci !", "Super ! merci beaucoup", "Super ! Au revoir", "Super ! bonne journée", "Au revoir !", "Au revoir Frenshi !", "Merci beaucoup ! Au revoir", "Merci beaucoup ! Au revoir Frenshi", "Oh ! Merci beaucoup", "Oh ! Merci beaucoup Frenshi", "Merci beaucoup ! Bonne journée", "Merci beaucoup ! Bonne journée Frenshi", "Merci !", "Merci Frenshi !", "Bonne journée", "Bonne journée Frenshi !"],
       "responses" : ["Au revoir ! N'hésitez pas à revenir vers moi si vous avez d'autres questions concernant vos démarches administratives en France !",
       "Je t'en prie ! N'hésitez pas à me poser d'autres question si vous avez besoin d'aide ou d'assistance dans vos démarches administratives en France ! A plus.",
       "Bonne journée ! N'hésitez pas à revenir vers moi si vous avez d'autres questions concernant vos démarches administratives en France !"]
     },
     {
-      "tag": "goodbyeEvening FR",
+      "tag": "GoodbyeEvening FR",
       "input": ["Bonne nuit", "Bonne soirée", "D'accord ! Bonne soirée", "D'accord ! Bonne nuit", "Super ! Bonne soirée", "Ca marche ! Bonne soirée", "ça marche ! Bonne soirée", "ça marche ! Bonne nuit", "Ca marche ! Bonne nuit", "Top ! Bonne soirée", "Top ! Bonne nuit", "Merci beaucoup ! Bonne soirée", "Merci beaucoup ! Bonne soirée Frenshi !", "Merci beaucoup ! Bonne nuit", "Merci beaucoup ! Bonne nuit Frenshi", "Merci ! Bonne soirée", "Merci ! Bonne soirée Frenshi !", "Merci ! Bonne nuit", "Merci ! Bonne nuit Frenshi", "Bonne soirée Frenshi !", "Bonne nuit Frenshi !"],
       "responses" : ["Au revoir ! N'hésitez pas à revenir vers moi si vous avez d'autres questions concernant vos démarches administratives en France!",
       "Je t'en prie ! N'hésitez pas à me poser d'autres question si vous avez besoin d'aide ou d'assistance dans vos démarches administratives en France!",
@@ -299,7 +299,7 @@
       "Si vous souhaitez télécharger l'application Ameli, vous pouvez faire cela via l'adresse ci-dessous:\nhttps://play.google.com/store/apps/datasafety?id=fr.cnamts.it.activity&hl=fr&gl=US"]
     },
     {
-      "tag": "unknown FR",
+      "tag": "Unknown FR",
       "input": ["Pas de quoi!", "Appelle-moi!", "Nouvelle année", "Comment tu vas?", "Je vais bien", "Tu-vas bien?", "Oh la la", "C'est pas ça!" , "Ah ouais!", "Non!", "blabla", "Tu rigoles", "Arrêtes!", "Pas ça", "Pièce", "Pieces", "Ahah!", "hhhhhhhhhhhhhhhhh", "N'importe quoi!", "Mais non c'est faux", "C'est faux!", "Mais que ce que vous racontez?", "Je comprend pas", "Vous êtes nul", "Oppa", "klklklklkbhghg", "gggfgfgfgsfsq", "ghhghfh", "dsjkghjdhjgh", "Rien", "Pourquoi ça!!", "Tu trompes", "Voilà", "hggsfgsfhjqj", "kjkjkjkjsvbsnb", "Alors ça!", "ffdffdfd", "gfsghjhjsdwjghd", "Je comprens pas", "hghsghjhjdghjqdhjgdhjfsghdfgghdhjvfchghdgfd", "hgdhghdsvqhjvdqhpauuzguapeljhhe", "ghjqsqghjgqdyfyjzaydzfhjdfvhedpqpqkjkqe", "Rien de tout", "lkljkslkjdklqhlhlhjkhqjkdfcjlqchlfchqkljfqhkqh", "vbvbvhfhyzfhyjgsjgqskjh", "lmkldjkldqhjkdjkqgdkgdhjqvdhjbncvfzayjguz", "jhjkqgwjkdgqjkggvilvhjkV"],
       "responses": ["Pardon! Mais j'ai pas pu trouver de reponse à votre question. Veuillez s'il vous plait essayer les proposition suivantes :\nValider mon visa, titre de sèjour, CAF ou sécurité sociale. Merci !",
       "Excuse-moi! Mais je ne trouve pas des réponses à votre demande. Veuillez s'il vous plait prendre en considération les suggestions suivantes :\nValider mon visa, titre de séjour, CAF ou sécurité sociale. Merci !",

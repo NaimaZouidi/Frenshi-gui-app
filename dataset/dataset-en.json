@@ -2,14 +2,14 @@
   "intents":
   [
     {
-      "tag": "goodbyeDay EN",
+      "tag": "GoodbyeDay EN",
       "input": ["Okay!", "Okay! Thank you", "Okay! Thank you very much", "Okay! Have a nice day", "Okay! Bye", "Okay! Goodbye", "Great! Have a nice day", "Great! Thank you", "Great! Thank you very much", "Great! Goodbye", "OK", "OK! Bye", "OK! Thank you", "OK! Have a nice day", "Great! Bye", "Bye!", "Bye Frenshi!", "Thank you very much! Goodbye Frenshi", "Oh! Thank you very much", "Oh! Thank you very much Frenshi", "Thank you very much! Have a nice day", "Thank you very much! Have a nice day Frenshi", "Thank you!", "Thank you Frenshi!", "Have a nice day", "Have a nice day Frenshi!"],
       "responses": ["Goodbye! Don't hesitate if you have any other questions about the administrative formalities in France!",
       "You're welcome! Don't hesitate to ask me any more questions if you need help or assistance with the administrative formalities in France! See you later.",
       "Have a nice day! Don't hesitate if you have any more questions about the administrative formalities in France!"]
     },
     {
-      "tag": "goodbyeEvening EN",
+      "tag": "GoodbyeEvening EN",
       "input": ["Good night", "Okay! Good night", "Great! Good night", "Great! Good night Frenshi", "Okay! Good night Frenshi" , "Thank you a lot! good night", "Thank you very much! Good night Frenshi", "Thank you very much!", "Thank you! Good night Frenshi", "Thank you! Good night", "Good night Frenshi!"],
       "responses": ["Goodbye! Don't hesitate if you have any other questions about the administrative formalities in France!",
       "You're welcome! Don't hesitate to ask me any more questions if you need help or assistance with your administrative formalities in France!",
@@ -300,7 +300,7 @@
       "If you wish to download the Ameli application, you can do so via the link below:\nhttps://play.google.com/store/apps/datasafety?id=fr.cnamts.it.activity&hl=fr&gl=US"]
     },
     {
-      "tag": "unknown EN",
+      "tag": "Unknown EN",
       "input": ["Null", "Noodle", "Call me", "Well", "Oops", "Fine", "How are you?", "You're welcome", "Not this", "Are you kidding me!", "Are you joking!", "No!", "Nope!", "Stop!", "Stop! please", "lol", "None sense", "It's incorrect", "That's okay", "I don't understand", "You're dumb", "Oppa", "Nothing", "What?!", "That's it", "Boom!!", "You're stupid", "Nothing at all", "Oh no!"],
       "responses": ["Sorry for the inconvenience! But I couldn't find any answer to your question. Please try the following options:\nValidate my visa, resident permit, CAF or health insurance. Thank you!",
       "Excuse me! But I can't find any answer to your question. Please consider the following suggestions:\nValidate my visa, resident permit, CAF or health insurance. Thank you!",
