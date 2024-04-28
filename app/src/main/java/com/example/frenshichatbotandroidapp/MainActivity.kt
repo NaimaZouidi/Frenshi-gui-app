@@ -38,13 +38,13 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         val userLanguage = resources.configuration.locale.language
         val frenShi = if( userLanguage == "fr")
-             FrenShi(this, "frenShi-fr.tflite", "word-dict-fr.json", 45, 18)
+             FrenShi(this, "frenShi-fr.tflite", "word-dict-fr.json", "FR", database)
         else{
-            FrenShi(this, "frenShi-en.tflite", "word-dict-en.json", 45, 18)
+            FrenShi(this, "frenShi-en.tflite", "word-dict-en.json", "EN", database)
         }
         val messagesListModelView : MessagesList by viewModels() //instantiate the Model View for the messages
         val messagesController = MessagesController(messagesListModelView) //instantiate the messages controller
-        val frenShiController = FrenShiController(frenShi)
+        val frenShiController = FrenShiController(frenShi, messagesController)
         super.onCreate(savedInstanceState)
         setContent{AppGUIView(messagesListModelView, messagesController, frenShiController)} //call the view composable function to render the GUI
         frenShiController.onFrenShiInit()
@@ -59,19 +59,19 @@ class MainActivity : ComponentActivity() {
     */
     private suspend fun fetchFrenShiDatabasesFromServer(userLanguage: String): List<FrenShiRecordNetwork> {
         val response : FrenShiDataNetwork = if(userLanguage == "fr"){ //based on the user local download dataset
-            httpClient.get("https://raw.githubusercontent.com/NaimaZouidi/Frenshi-gui-app/main/Datasets/dataset-fr.json")
+            httpClient.get("https://raw.githubusercontent.com/NaimaZouidi/Frenshi-gui-app/main/dataset/dataset-fr.json")
                 .body<FrenShiDataNetwork>()
         }
         else {
-            httpClient.get("https://raw.githubusercontent.com/NaimaZouidi/Frenshi-gui-app/main/Datasets/dataset-en.json")
+            httpClient.get("https://raw.githubusercontent.com/NaimaZouidi/Frenshi-gui-app/main/dataset/dataset-en.json")
                 .body<FrenShiDataNetwork>()
         }
-        return response.frenShiRecordsNetwork//Pair(responseFR.frenShiRecordsNetwork, responseEN.frenShiRecordsNetwork)
+        return response.frenShiRecordsNetwork
     }
 
     /**!
      * A function to save the parsed datasets in Room databases
-     * @param frenShiDataRecords the retrieved data from the remote server (FR version)
+     * @param frenShiDataRecords the retrieved data from the remote server
      */
     private fun saveFrenshiDataRecordsToDatabase(frenShiDataRecords: List<FrenShiRecordNetwork>) {
         val frenShiResponsesRoom = frenShiDataRecords.map { it.toFrenShiResponsesRoom()} //convert retrieved data to Room database records

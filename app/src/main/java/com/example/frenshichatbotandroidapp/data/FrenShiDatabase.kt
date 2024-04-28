@@ -34,7 +34,7 @@ data class FrenShiInputsRoom(
 @Dao
 interface FrenshiFRDataDao {
     @Query("SELECT response FROM FrenShiresponsesRoom WHERE tag = (:predictedTag)")
-    fun getResponse(predictedTag: String)
+    fun getResponse(predictedTag: String):String
     @Insert
     fun insertAllResponses(vararg frenShiResonses: FrenShiresponsesRoom)
     @Insert

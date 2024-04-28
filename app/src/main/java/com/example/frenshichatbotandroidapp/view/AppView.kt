@@ -54,7 +54,7 @@ fun AppGUIView(
         mutableStateOf(false)
     }
     val lazyColumnListState = rememberLazyListState()
-    val corroutineScope = rememberCoroutineScope()
+    val coroutineScope = rememberCoroutineScope()
     val messagesListItems = messagesListModelView.messagesList //a state to store the change of the list of messages in the chat using Model View architecture
     Column (){
         LazyColumn(
@@ -62,7 +62,7 @@ fun AppGUIView(
             .padding(top = 50.dp, bottom = 20.dp),
             state = lazyColumnListState,
             verticalArrangement = Arrangement.Bottom) {
-            corroutineScope.launch { //always scroll to the last item in the messages list
+            coroutineScope.launch { //always scroll to the last item in the messages list
                 lazyColumnListState.animateScrollToItem(messagesListItems.size)
             }
             item {
@@ -107,10 +107,6 @@ fun AppGUIView(
                         userMsgText
                     ) //add user input to the list of messages each time the button is clicked
                     frenShiController.onFrenShiPredict(userMsgText)
-                    messagesController.onMessageAdd(
-                        "FrenShi",
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis erat nunc, tincidunt eget porttitor sed, consequat ac enim."
-                    )
                     userMsgText = ""
                     enableSendButton = false
                 }

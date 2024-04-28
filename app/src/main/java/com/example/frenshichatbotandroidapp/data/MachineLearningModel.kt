@@ -8,5 +8,5 @@ import org.tensorflow.lite.Interpreter
 interface MachineLearningModel {
     fun initPrediction()
     suspend fun loadModel(): Interpreter?
-    fun predict(userInputText: String)
+    fun predict(userInputText: String, onComplete: ((String) -> Unit))
 }

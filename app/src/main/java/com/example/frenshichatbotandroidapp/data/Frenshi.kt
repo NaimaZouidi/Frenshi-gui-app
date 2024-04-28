@@ -14,70 +14,26 @@ import java.io.IOException
 import java.io.InputStreamReader
 
 /**!
- * A class implementing the FR version of FrenShi chatbot
+ * A class implementing the EN version of FrenShi chatbot
  */
 //46, 18
 class FrenShi(
         private val context: Context,
         private val modelAssetsName: String,
         private val vocabAssetsName: String,
-        private val version : String
-        ) : MachineLearningModel {
+        private val versionFrenshi: String,
+        private val database: FrenShiDatabase
+) : MachineLearningModel {
                 private lateinit var vocabData: HashMap<String, Int>
                 private lateinit var tfLiteInterpreter: Interpreter
-                private lateinit var answerTag:String
-                private val tags : List<String> = if(version == "FR"){
-                        listOf("APL FR", "APL calculation FR",
-                                "APL requirements FR",
-                                "Apply for Supplementary health insurance FR",
-                                "Apply for health insurance FR",
-                                "Apply for resident permit FR",
-                                "Apply to APL FR",
-                                "CAF FR",
-                                "Civil state FR",
-                                "Civil state health insurance FR",
-                                "Civil state resident permit FR",
-                                "Documents for Resident permit FR",
-                                "Download Ameli app FR",
-                                "E-photo FR",
-                                "Employee FR",
-                                "First APL payment FR",
-                                "First stage health insurance FR",
-                                "Health insurance FR",
-                                "Health insurance account FR",
-                                "Health insurance card FR",
-                                "Hosting agreement FR",
-                                "IBAN FR",
-                                "Identity photograph FR",
-                                "Preferred doctor FR",
-                                "Proof of address FR",
-                                "RIB FR",
-                                "Reason for staying FR",
-                                "Resident permit FR",
-                                "Second stage health insurance FR",
-                                "Student holding a scholarship FR",
-                                "Student renting a flat FR",
-                                "Student sponsored by a third party FR",
-                                "Student staying at a hotel FR",
-                                "Student staying with family or relatives FR",
-                                "Student with sufficient financial ressources FR",
-                                "Supplementary health insurance FR",
-                                "Supporting documents APL FR",
-                                "Supporting documents Financial ressources FR",
-                                "Supporting documents health insurance FR",
-                                "Third stage health insurance FR",
-                                "Update health insurance card FR",
-                                "Validate visa FR",
-                                "GoodbyeDay FR",
-                                "GoodbyeEvening FR",
-                                "Unknown FR")
-                }
-                else{
+                private lateinit var answer : String
+                private val tags : List<String> = if(versionFrenshi == "EN"){
                         listOf("APL EN",
                                 "APL calculation EN",
                                 "APL requirements EN",
                                 "Apply for Supplementary health insurance EN",
                                 "Apply for health insurance EN",
+                                "Apply for health insurance card EN",
                                 "Apply for resident permit EN",
                                 "Apply to APL EN",
                                 "CAF EN",
@@ -90,6 +46,56 @@ class FrenShi(
                                 "Employee EN",
                                 "First APL payment EN",
                                 "First stage health insurance EN",
+                                "GoodbyeDay EN",
+                                "GoodbyeEvening EN",
+                                "Health insurance EN",
+                                "Health insurance account EN",
+                                "Health insurance card EN",
+                                "Hosting agreement EN",
+                                "IBAN EN",
+                                "Identity photograph EN",
+                                "Preferred doctor EN",
+                                "Proof of address EN",
+                                "RIB EN",
+                                "Reason for staying EN",
+                                "Resident permit EN",
+                                "Second stage health insurance EN",
+                                "Student holding a scholarship EN",
+                                "Student renting a flat EN",
+                                "Student sponsored by a third party EN",
+                                "Student staying at a hotel EN",
+                                "Student staying with family or relatives EN",
+                                "Student with sufficient financial ressources EN",
+                                "Supplementary health insurance EN",
+                                "Supporting documents APL EN",
+                                "Supporting documents Financial ressources EN",
+                                "Supporting documents health insurance EN",
+                                "Third stage health insurance EN",
+                                "Unknown EN",
+                                "Update health insurance card EN",
+                                "Validate visa EN")
+                }
+                else{
+                        listOf("APL EN",
+                                "APL calculation EN",
+                                "APL requirements EN",
+                                "Apply for Supplementary health insurance EN",
+                                "Apply for health insurance EN",
+                                "Apply for health insurance card EN",
+                                "Apply for resident permit EN",
+                                "Apply to APL EN",
+                                "CAF EN",
+                                "Civil state EN",
+                                "Civil state health insurance EN",
+                                "Civil state resident permit EN",
+                                "Documents for Resident permit EN",
+                                "Download Ameli app EN",
+                                "E-photo EN",
+                                "Employee EN",
+                                "First APL payment EN",
+                                "First stage health insurance EN",
+                                "GoodbyeDay EN",
+                                "GoodbyeEvening EN",
                                 "Health insurance EN",
                                 "Health insurance account EN",
                                 "Health insurance card EN",
@@ -107,24 +113,22 @@ class FrenShi(
                                 "Student sponsored by a third party EN",
                                 "Student staying at a hotel EN",
                                 "Student staying with family or relatives EN",
-                                "Student with sufficient financial ressources EN",
+                                "Student with sufficient financial resources EN",
                                 "Supplementary health insurance EN",
                                 "Supporting documents APL EN",
-                                "Supporting documents Financial ressources EN",
+                                "Supporting documents Financial resources EN",
                                 "Supporting documents health insurance EN",
                                 "Third stage health insurance EN",
+                                "Unknown EN",
                                 "Update health insurance card EN",
-                                "Validate visa EN",
-                                "GoodbyeDay EN",
-                                "GoodbyeEvening EN",
-                                "Unknown EN")
+                                "Validate visa EN")
                 }
                 companion object{
                         private const val OUTPUT_LENGTH = 46
                         private const val INPUT_SHAPE = 18
                 }
-                private fun setAnswerTag(tagIndex: Int){
-                        answerTag = tags[tagIndex]
+                private fun setAnswer(answerDatabase: String){
+                        this@FrenShi.answer= answerDatabase
                 }
                 fun getOutputLength(): Int{
                         return OUTPUT_LENGTH
@@ -132,8 +136,15 @@ class FrenShi(
                 fun getInputShape(): Int{
                         return INPUT_SHAPE
                 }
-                fun getAnswerTag(): String{
-                        return answerTag
+
+                fun getAnswer(): String{
+                        return answer
+                }
+                private fun queryAnswer(answerTag: String) {
+                        val answerDatabase = database.FrenShiDataDao().getResponse(answerTag)
+                        Log.d("Answer from database", "$answerDatabase")
+                        setAnswer(answerDatabase)
+                //return database.FrenShiDataDao().getResponse(tags[answerTagIndex])
                 }
                 override fun initPrediction() {
                         CoroutineScope(Dispatchers.Default).launch {
@@ -150,20 +161,22 @@ class FrenShi(
                                 }
                         }
                 }
-                override fun predict(userInputText: String) {
-                CoroutineScope(Dispatchers.Default).launch {
-                        val inputs: Array<FloatArray> = arrayOf(
-                                padSequence(tokenizeUserInput(convertToLowercaseAndRemovePunctuation(userInputText)))
-                                        .map { it.toFloat() }
-                                        .toFloatArray()
-                        )//preprocessing user input
-                        //Output shape -> ( 1 , 46/45 ) ( as numClasses = 46/45 )
-                        val outputs: Array<FloatArray> = arrayOf(FloatArray(OUTPUT_LENGTH))
-                        tfLiteInterpreter.run(inputs, outputs) //run model inference
-                        val answerTagIndex = argMax(outputs[0])
-                        setAnswerTag(answerTagIndex)
+                override fun predict(userInputText: String, onComplete: ((String) -> Unit)){
+                        CoroutineScope(Dispatchers.Default).launch {
+                                val inputs: Array<FloatArray> = arrayOf(
+                                        padSequence(tokenizeUserInput(convertToLowercaseAndRemovePunctuation(userInputText)))
+                                                .map { it.toFloat() }
+                                                .toFloatArray()
+                                )//preprocessing user input
+                                //Output shape -> ( 1 , 46 ) ( as numClasses = 46 )
+                                val outputs: Array<FloatArray> = arrayOf(FloatArray(OUTPUT_LENGTH))
+                                tfLiteInterpreter.run(inputs, outputs) //run model inference
+                                val answerTagIndex = argMax(outputs[0])
+                                val answerTag = tags[answerTagIndex-1]
+                                queryAnswer(answerTag)
+                                onComplete(answer)
+                        }
                 }
-        }
                 private fun padSequence(sequence: IntArray): IntArray {
                         val paddedSequence = IntArray(INPUT_SHAPE) { 0 }
                         sequence.forEachIndexed { i, part->
@@ -215,7 +228,7 @@ class FrenShi(
                                 null
                         }
                 }
-                private fun argMax(outputs: FloatArray): Int{
+                fun argMax(outputs: FloatArray): Int{
                         val maxProb = outputs.maxOrNull()
                         outputs.forEachIndexed{i, prob ->
                                 if(prob == maxProb){

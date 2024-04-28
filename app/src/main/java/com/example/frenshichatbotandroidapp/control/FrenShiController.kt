@@ -2,20 +2,16 @@ package com.example.frenshichatbotandroidapp.control
 
 import com.example.frenshichatbotandroidapp.data.FrenShi
 
-class FrenShiController(val frenShi: FrenShi) {
+class FrenShiController(val frenShi: FrenShi, val messagesController: MessagesController) {
     fun onFrenShiInit(){
         frenShi.initPrediction()
     }
-    fun onFrenShiPredict(userInputText: String){
-        frenShi.predict(userInputText)
+    fun onFrenShiPredict(userInputText: String) {
+        frenShi.predict(userInputText) {
+            messagesController.onMessageAdd(
+                "FrenShi",
+                it
+            ) //predict anwser to the user input and add it to the list of messages each time the button is clicked
+        }
     }
-
 }
-/*class FrenshiENController(val frenShiEN: FrenShiEN) {
-    fun onFrenshiInit(){
-        frenShiEN.initPrediction()
-    }
-    fun onFrenShiPredict(userInputText: String){
-        frenShiEN.predictResponse(userInputText)
-    }
-}*/
