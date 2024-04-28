@@ -1,0 +1,309 @@
+{"intents":
+[
+    {
+      "tag": "goodbyeDay FR",
+      "input": ["ça marche!","ça marche! Bonne journée", "ça marche ! Merci", "ça marche ! Au revoir", "ça marche ! Merci beaucoup", "Ca marche!", "Ca marche ! Bonne journée", "Ca marche ! Merci", "Ca marche ! Au revoir", "Ca marche ! Merci beaucoup", "Top !", "Top ! Bonne journée", "Top ! Merci", "Top ! Merci beaucoup", "Top ! Au revoir", "D'accord", "D'accord ! Au revoir !", "D'accord! Merci !", "D'accord ! Merci beaucoup", "D'accord ! Bonne journée", "Super !", "Super ! Merci !", "Super ! merci beaucoup", "Super ! Au revoir", "Super ! bonne journée", "Au revoir !", "Au revoir Frenshi !", "Merci beaucoup ! Au revoir", "Merci beaucoup ! Au revoir Frenshi", "Oh ! Merci beaucoup", "Oh ! Merci beaucoup Frenshi", "Merci beaucoup ! Bonne journée", "Merci beaucoup ! Bonne journée Frenshi", "Merci !", "Merci Frenshi !", "Bonne journée", "Bonne journée Frenshi !"],
+      "responses" : ["Au revoir ! N'hésitez pas à revenir vers moi si vous avez d'autres questions concernant vos démarches administratives en France !",
+      "Je t'en prie ! N'hésitez pas à me poser d'autres question si vous avez besoin d'aide ou d'assistance dans vos démarches administratives en France ! A plus.",
+      "Bonne journée ! N'hésitez pas à revenir vers moi si vous avez d'autres questions concernant vos démarches administratives en France !"]
+    },
+    {
+      "tag": "goodbyeEvening FR",
+      "input": ["Bonne nuit", "Bonne soirée", "D'accord ! Bonne soirée", "D'accord ! Bonne nuit", "Super ! Bonne soirée", "Ca marche ! Bonne soirée", "ça marche ! Bonne soirée", "ça marche ! Bonne nuit", "Ca marche ! Bonne nuit", "Top ! Bonne soirée", "Top ! Bonne nuit", "Merci beaucoup ! Bonne soirée", "Merci beaucoup ! Bonne soirée Frenshi !", "Merci beaucoup ! Bonne nuit", "Merci beaucoup ! Bonne nuit Frenshi", "Merci ! Bonne soirée", "Merci ! Bonne soirée Frenshi !", "Merci ! Bonne nuit", "Merci ! Bonne nuit Frenshi", "Bonne soirée Frenshi !", "Bonne nuit Frenshi !"],
+      "responses" : ["Au revoir ! N'hésitez pas à revenir vers moi si vous avez d'autres questions concernant vos démarches administratives en France!",
+      "Je t'en prie ! N'hésitez pas à me poser d'autres question si vous avez besoin d'aide ou d'assistance dans vos démarches administratives en France!",
+      "Bonne nuit ! N'hésitez pas à revenir vers moi si vous avez d'autres questions concernant vos démarches administratives en France !",
+      "Bonne soirée ! N'hésitez pas à revenir vers moi si vous avez d'autres questions concernant vos démarches administratives en France !"]
+    },
+    {
+      "tag": "Validate visa FR",
+      "input": ["Comment valider mon visa", "Où valider mon visa", "Valider mon visa", "Validation visa", "Savoir plus sur la validation de visa", "Je souhaite valider mon visa"],
+      "responses":["Dés votre arrivée en France et au plus tard dans les 3 mois suivant votre arrivée, vous devez valider votre visa pour lui donner une Valeur de Titre de Séjour (VTS). Cette procédure est obligatoire pour tous les détenteurs d'une visa.\nVous devez valider votre visa en ligne sur le site internet de l'ANEF ci-dessous :\n\nhttps://administration-etrangers-en-France.interieur.gouv.fr/particuliers/#/\nSur ce site vous allez saisir le numéro de votre visa, quelques informations personnelles et payé une taxe de 50€ pour un 'statut étudiant' sous forme d'un timbre fiscal électronique, afin de recevez une attestation de validation au format PDF.",
+      "Vous devez valider votre visa dès votre arrivée en France et au plus tard dans les 3 mois suivant votre arrivée afin de lui donner une Valeur de Titre de Séjour (VTS). Tous les titulaires d'une visa doivent effectuer cette procédure. \nPar consequent, vous pouvez faire en ligne sur le site internet de l'ANEF ci-dessous:\n\nhttps://administration-etrangers-en-France.interieur.gouv.fr/particuliers/#/,\nSur ce site, vous allez entrer le numéro de votre visa, quelques informations personnelles et payer une taxe de 50€ pour un 'statut étudiant' sous forme d'un timbre fiscal électronique afin de recevoir une attestation de validation au format PDF.",
+      "Pour lui donner une Valeur de Titre de Séjour (VTS), vous devez valider votre visa dès votre arrivée en France et au plus tard dans les 3 mois suivant votre arrivée. Tous ceux qui ont un visa doivent effectuer cette procédure en ligne.\nPar consequent, vous pouvez faire sur le site internet de l'ANEF :https://administration-etrangers-en-France.interieur.gouv.fr/particuliers/#/\nSur ce site, vous devez saisir le numéro de votre visa, quelques informations personnelles et payer une taxe de 50€ pour un 'statut étudiant' sous forme de timbre fiscal électronique afin de recevoir une attestation de validation au format PDF."]
+    },
+    {
+      "tag": "Civil state FR",
+      "input": ["Justificatif état civil", "état civil", "Etat civil", "C'est quoi l'état civil?", "Quel document pour l'état civil?", "Quelle pièce justificative pour l'état civil?", "savoir plus sur l'état civil", "Je souhaite savoir plus sur l'état civil?", " Quel justificatif pour l’état civil"],
+      "responses":["La pièce justificative à fournir pour l'état civil peut dépendre de démarche administratif à faire, à savoir: une démarche pour un titre de séjour ou la sécurité sociale. Veuillez s'il vous plait préciser cela dans votre question. Merci !",
+      "Le document à fournir pour l'état civil peut varier en fonction de la démarche administratif à faire, telle qu'une demande de titre de séjour ou de sécurité sociale. Veuillez s'il vous plait préciser cela dans votre question. Merci !"]
+    },
+    {
+      "tag": "Resident permit FR",
+      "input":["Titre de séjour", "Que ce que c'est un titre de séjour?", "Pourquoi un titre de séjour?", "Quel titre de séjour faut-t-il demander?", "Quel titre de séjour pour un étudiant étranger?", "Quel titre de séjour pour une étudiante étrangere?", "Dois-je demande un titre de séjour?", "Savoir plus sur le titre de séjour", "Je souhaite savoir plus sur le titre de séjour"],
+      "responses": ["Le titre de séjour est un document qui vous permet de circuler et franchir les frontières de l'espace Schengen. En tant qu'étudiant étranger vous devez demander un titre de séjour mention étudiant ou chercheur si vous êtes venu faire une thèse de doctorat.",
+      "En France, le titre de séjour vous permet de circuler et franchir les frontières de l'espace Schengen. En tant qu'étudiant étranger vous devez demander un titre de séjour mention étudiant ou chercheur si vous êtes venu faire une thèse de doctorat.",
+      "Le titre de séjour en France justifie vos droits et vous permet de circuler et franchir les frontières de l'espace Schengen. En tant qu'étudiant étranger vous devez demander un titre de séjour mention étudiant ou chercheur si vous êtes venu faire une thèse de doctorat."]
+    },
+    {
+      "tag":"Hosting agreement FR",
+      "input":["Convention d'accueil", "Pourquoi une convention d'accueil?", "C'est quoi une convention d'accueil?", "Je souhaite savoir plus sur la convention d'accueil", "Savoir plus sur la convention d'accueil"],
+      "responses":["Afin que vous puissiez demander un titre de séjour mention 'chercheur', votre laboratoire d'accueil vous fera parvenir une convention d'accueil  signée par le responsable de l'organisme d'accueil et cachetée par l'établissement.\nAttention : Seuls les établissements d'enseignement supérieur et certains organismes agréés peuvent émettre une convention d'accueil.",
+      "Pour demander un titre de séjour mention 'chercheur', votre laboratoire d'accueil doit vous adresser une convention d'accueil signée par le responsable de l'organisme d'accueil et cachetée par l'établissement.\n Attention : seuls les établissements d'enseignement supérieur et certains organismes agréés peuvent délivrer une convention d'accueil.",
+      "Pour ta demande de titre de séjour mention 'chercheur', il est essentiel que votre laboratoire d'accueil vous addresse une convention d'accueil signée par le responsable de l'organisme d'accueil et cachetée par l'établissement.\nAttention : Seuls les établissements d'enseignement supérieur et certains organismes agréés sont autorisés à établir une convention d'accueil."]
+    },
+    {
+      "tag": "Documents for Resident permit FR",
+      "input": ["Justificatifs titre de séjour", "Quelles sont les pièces justificatives pour demander un titre de séjour?", "Comment formuler ma demande de titre de séjour?", "Pièces justificatives titre de séjour", " Savoir plus sur les pièces justificatives pour demander un titre de séjour", "Je souhaite savoir plus sur les pièces justificatives pour formuler ma demande de titre de séjour"],
+      "responses": ["Voici la liste des pièces justificatives que vous aurez besoin pour préparer de votre demande de titre de séjour:\n1. Un justificatif d'état civil.\n2. Photographie d'identité récente datant de moins de 3 mois.\n3. Justificatifs de domicile datant d'au moins de 6 mois.\n4. Le motif de votre séjour.\n5. Des ressources financières.",
+      "Quant aux pièces justificatives que vous aurez besoin pour préparer votre demande de titre de séjour, ils sont les suivantes:\n1. Un justificatif d'état civil.\n2. Photographie d'identité récente datant de moins de 3 mois.\n3. Justificatifs de domicile datant d'au moins de 6 mois.\n4. Le motif de votre séjour.\n5. Des ressources financières.",
+      "Pour formuler votre demande de titre de séjour de titre de séjour ous aurez besoin des pièces justificatives suivantes:\n1. Etat civil.\n2. Photographie d'identité récente datant de moins de 3 mois.\n3. Justificatifs de domicile datant d'au moins de 6 mois.\n4. Le motif de votre séjour.\n5. Des ressources financières."]
+    },
+    {
+      "tag": "Civil state resident permit FR",
+      "input": ["Justificatif état civil titre de séjour", "Etat civil titre de séjour", "état civil titre de séjour", "Je souhaite savoir quel justificatif d'état civil dont j'ai besoin pour ma demande de titre de séjour?", "Qu’est-ce que le justificatif de l'état civil pour une demande de titre de séjour?", "Quel est le document d'état civil à fournir pour ma demande de titre de séjour", "Peux-je joindre quoi comme document pour l'état civil dans ma demande de titre de séjour?"],
+      "responses": ["Pour l'état civil il vaut faut un titre de séjour en cours de validité, s'il s'agit d'un renouvellement, ou juste votre passeport. En effet, si vous n'avez pas de titre de séjour en cours de validité, veuillez joindre les pages de votre passeport relatives à l'état civil, aux dates de validité, aux cachets d'entrée et aux visas y a compris ton visa long séjour VTS.",
+      "Quant à l'état civil il vaut faut un titre de séjour en cours de validité, s'il s'agit d'un renouvellement, ou juste votre passeport. En effet, si vous n'avez pas de titre de séjour en cours de validité, veuillez joindre les pages de votre passeport relatives à l'état civil, aux dates de validité, aux cachets d'entrée et aux visas y a compris ton visa long séjour VTS."]
+    },
+    {
+      "tag": "Identity photograph FR",
+      "input": ["Quelle photographie d'identité?", "Photographie d'identité", "Format de photographie d'identité", "Quelle format pour la photographie d'identité", "Photo d'identité", "Quelle photo d'identité?", "Format de photo d'identité", "Quelle format pour le photo d'identité?"],
+      "responses":["La photographie d'identité prend la forme une e-photo datant de moins de 6 mois.",
+      "La photographie d'identité prend la forme d'une e-photo et doit avoir été prise il y a moins de 6 mois."]
+    },
+    {
+      "tag": "E-photo FR",
+      "input": ["C'est quoi un e-photo?", "e-photo", "Savoir plus sur l'e-photo", "Je souhaite savoir plus sur l'e-photo"],
+      "responses": ["L'e-photo est une photo d'identité dématérialisée avec une signature numérique.",
+      "L'e-photo présente une photo d'identité dématérialisée avec une signature numérique."]
+    },
+    {
+      "tag": "Reason for staying FR",
+      "input": ["Quels sont les documents pour le motif de mon séjour?", "Je souhaite savoir plus sur les documents à fournir pour le motif de mon séjour?", "Motif de séjour", "Savoir plus sur le motif de titre de séjour", "Je souhaite savoir plus sur le motif de séjour", "C'est quoi le motif de séjour?", "Motif de séjour étudiant", "Quels sont les documents à fournir pour le motif de séjour?", "Quelles sont les pièces justificatives à fournir pour le motif de séjour?", "Peux-je joindre quoi comme pièces justificatives pour le motif de séjour?", "Quels est les document pour le titre de séjour ?"],
+      "responses": ["Concernant le motif de votre séjour, il faut fournir une certificat d'inscription ou justificatif de réinscription auprès de votre établissement d'enseignement supérieur.\nVous aurez aussi besoin de:\n1- Vos relevés de notes.\n2- Votre dernier diplôme obtenu.\n3- Une attestation de réussite s'il s'agit d'une renouvellement.\nSi la mention de titre de séjour qui vous solliciter est chercheur vous devez joindre également une convention d'accueil de laboratoire de recherche dont laquelle vous allez effectuer votre thèse de doctorat.",
+      "Pour le motif de votre séjour il s'agit de fournir une certificat d'inscription ou justificatif de réinscription auprès de votre établissement d'enseignement supérieur.\nVous aurez aussi besoin de:\n1- Vos relevés de notes.\n2- Votre dernier diplôme obtenu.\n3- Une attestation de réussite s'il s'agit d'une renouvellement.\nSi la mention de titre de séjour qui vous solliciter est chercheur vous devez joindre également une convention d'accueil de laboratoire de recherche dont laquelle vous allez effectuer votre thèse de doctorat."]
+    },
+    {
+      "tag":"Apply for resident permit FR",
+      "input": ["Je souhaite demander un titre de séjour", "Comment demander un titre de séjour?" , "Demander un titre de séjour", "Où déposer ma demande de titre de séjour?", "Comment solliciter un titre de séjour?", "Je sollicite un titre de séjour", "Où effectuer ma démarche de titre de séjour?", "Je souhaite effectuer ma démarche de titre de séjour", "Où demander un titre de séjour?"],
+      "responses": ["Si vous souhaitez effectuer votre démarche de titre de séjour vous pouvez précéder à travers le site internet de l'ANEF ci-dessous:\nhttps://administration-etrangers-en-France.interieur.gouv.fr/particuliers/#/",
+      "Pour effectuer votre démarche de titre de séjour vous pouvez précéder à travers le site internet de l'ANEF ci-dessous:\nhttps://administration-etrangers-en-France.interieur.gouv.fr/particuliers/#/",
+      "Pour demander un titre de séjour vous pouvez précéder à travers le site internet de l'ANEF ci-dessous:\nhttps://administration-etrangers-en-France.interieur.gouv.fr/particuliers/#/"]
+    },
+    {
+      "tag": "Proof of address FR",
+      "input": ["Quel justificatif pour le domicile?", "Le Justificatif de domicile, c'est quoi?", "Justificatif de domicile", "Peux-je joindre quoi comme justificatif de domicile?", "Je souhaite savoir plus sur le justificatif de domicile", "Savoir plus sur le justificatif de domicile"],
+      "responses": ["Le justificatif de domicile peut prendre plusieurs formes. Veuillez s'il vous plait me préciser si vous êtes locataire, héberger à l’hôtel ou chez un particulier. Merci !",
+      "Pour le justificatif de domicile, il peut prendre plusieurs formes. Veuillez s'il vous plait me préciser si vous êtes locataire, héberger à l’hôtel ou chez un particulier. Merci !"]
+    },
+    {
+      "tag": "Student renting a flat FR",
+      "input": ["Je suis locataire!", "locataire", "Je suis étudiant locataire", "Je suis étudiante locataire", "Etudiant locataire", "étudiant locataire", "Je suis en location", "J'habite en location", "Oui! je suis locataire", "Oui! je suis étudiant locataire", "Oui! Je suis en location", "Oui ! J’habite en location"],
+      "responses":["Si vous êtes locataire, vous pouvez joindre un des justificatifs de domicile suivant:\n- Une facture d'électricité, gaz, eau, internet, fixe ou mobile. \n- Une copie du bail de location.\n- Une copie d'une quittance de loyer ou de taxe d'habitation.",
+      "Dans le cas où vous êtes locataire il faut joindre un des justificatifs de domicile suivant:\n- Une facture d'électricité, gaz, eau, internet, fixe ou mobile. \n- Une copie du bail de location.\n- Une copie d'une quittance de loyer ou de taxe d'habitation."]
+    },
+    {
+      "tag": "Student staying at a hotel FR",
+      "input": ["Je suis hébergé à l’hôtel", "Je suis hébergée à l’hôtel", "Je suis à l’hôtel", "J'habite à l’hôtel", "Oui ! Je suis hébergé à l’hôtel", "Oui ! Je suis hébergée à l’hôtel", "Oui ! Je suis à l’hôtel", "Oui ! J'habite à l’hôtel"],
+      "responses":["Si vous êtes hébergé(e) à l'hôtel, vous pouvez joindre un des justificatifs de domicile suivant:\n - Une attestation de l’hôtel.\n- Une copie de votre facture du dernier mois.",
+      "Dans le cas où vous êtes hébergé(e) à l’hôtel, vous pouvez joindre un des justificatifs de domicile suivant:\n - Une attestation de l’hôtel.\n- Une copie de votre facture du dernier mois."]
+    },
+    {
+      "tag":"Student staying with family or relatives FR",
+      "input":["Je suis chez un particulier", "Je suis hébergé chez un particulier", "Oui! Je suis chez un particulier", "Oui ! Je suis hébergé chez un particulier", "Je suis chez un proche", "Je suis hébergé chez un proche", "Oui ! Je suis chez un proche", "Oui ! Je suis hébergé chez un proche", "Oui ! J'habite chez un proche", "Je suis chez un ami", "J'habite chez un ami", "Oui ! Je suis chez un ami", "Oui ! J'habite chez un ami", "Je suis chez une amie", "Je suis hébergé chez un amie", "Oui ! Je suis chez une amie", "Oui ! Je suis hébergé chez une amie", "Je suis hébergée chez un particulier", "Je suis logée chez un particulier", "Oui ! Je suis hébergée chez un particulier", "Oui ! Je suis logée chez un particulier", "Je suis hébergée chez un proche", "Je suis logée chez un proche", "Oui ! Je suis hébergée chez un proche", "Je suis hébergée chez un ami", "Je suis logée chez un ami", "Oui ! Je suis hébergée chez un ami", "Oui ! Je suis logée chez une ami", "Je suis hébergée chez une amie", "Je suis logée chez une amie", "Oui ! Je suis hébergée chez un amie"],
+      "responses":["Si vous êtes hébergé(e) chez un particulier, vous pouvez joindre un des justificatifs de domicile suivant:\n- Une attestation de l'hébergeant datée et signée.\n- Une copie de sa Carte d'Identité Nationale(CIN) ou de sa carte de séjour.\n- Un justificatif de domicile de l'hébergeant si l'adresse inscrite sur son CIN n'est pas à jour.",
+      "Dans le cas où vous êtes hébergé(e) chez un particulier, vous pouvez joindre un des justificatifs de domicile suivant:\n- Une attestation de l'hébergeant datée et signée.\n- Une copie de sa Carte d'Identité Nationale (CIN) ou de sa carte de séjour.\n- Un justificatif de domicile de l'hébergeant si l'adresse inscrite sur son CIN n'est pas à jour."]
+    },
+    {
+      "tag": "Supporting documents Financial ressources FR",
+      "input": ["Quels sont les justificatifs pour les ressources financières?", "Justificatifs Ressources financiers", "Ressources financières", "Quels sont les documents dont j’ai besoin pour les ressources financières", "Quelles pièces justificatives pour les ressources financières?", "Pièces justificatives ressources financières", "Savoir plus sur les justificatifs pour les ressources financières", "Je souhaite savoir plus sur les pièces justificatives pour les ressources financières"],
+       "responses": ["Les justificatifs des ressources financiers peut dépendre de votre situation. Veuillez s'il vous plait me préciser si vous êtes pris en charge par un tiers, boursier, salarié ou vous avez des ressources financières suffisantes pour vos études. Merci!",
+      "En ce que concerne les justificatifs des ressources financiers ceux-ci peut dépendre de votre situation. Veuillez s'il vous plait me préciser si vous êtes pris en charge par un tiers, boursier, salarié ou vous avez des ressources financières suffisantes pour vos études. Merci!",
+      "Pour les justificatifs des ressources financiers cela peut dépendre de votre situation. Veuillez s'il vous plait me préciser si vous êtes pris en charge par un tiers, boursier, salarié ou vous avez des ressources financières suffisantes pour vos études. Merc!"]
+    },
+    {
+      "tag": "Student holding a scholarship FR",
+      "input": ["Je suis boursier", "Je suis étudiant boursier", "Boursier", "Étudiant boursier", "J'ai un bourse", "Je bénéficier d'un bourse", "Titulaire d'un bourse", "Oui! Je suis boursier", "Oui ! Je suis étudiant boursier", "Oui ! J'ai un bourse", "Oui ! Je bénéficier d'un bourse", "Oui! Je suis titulaire d'un bourse", "Je suis boursiere", "Je suis étudiante boursiere", "Boursiere", "Étudiant boursiere", "Oui! Je suis boursiere", "Oui ! Je suis étudiante boursiere"],
+      "responses": ["Si vous êtes boursier(e), vous pouvez joindre une attestation justificative selon votre situation. Si vous êtes boursier dans votre pays d'origine vous aurez besoin d'une attestation de bourse de l'organisme payeur du pays d'origine. Sinon, vous devez fournir une attestation de financement de gouvernement française ou programme européen qui finance vos études.",
+      "Dans le cas où si vous êtes boursier(e), vous pouvez joindre une attestation justificative selon votre situation. Si vous êtes boursier dans votre pays d'origine vous aurez besoin d'une attestation de bourse de l'organisme payeur du pays d'origine. Sinon, vous devez fournir une attestation de financement de gouvernement française ou programme européen qui finance vos études.",
+      "Etant donnée que vous êtes boursier(e), vous pouvez joindre une attestation justificative selon votre situation. Si vous êtes boursier dans votre pays d'origine vous aurez besoin d'une attestation de bourse de l'organisme payeur du pays d'origine. Sinon, vous devez fournir une attestation de financement de gouvernement française ou programme européen qui finance vos études."]
+    },
+    {
+      "tag": "Student sponsored by a third party FR",
+      "input" : ["Je suis pris en charge par un tiers", "pris en charge par un tiers", "Étudiant pris en charge par un tiers", "Je suis pris en charge par mes parents", "Mes parents prennent en charge les frais de mes études", "Je suis pris en charge par un proche", "Un de mes proches prend en charge les frais de mes études", "Je suis prise en charge par un tiers", "prise en charge par un tiers", "Étudiante prise en charge par un tiers", "Je suis prise en charge par mes parents", "Je suis prise en charge par un proche", "Oui ! Je suis pris en charge par un tiers", "Oui ! Je suis prise en charge par mes parents"],
+      "responses": ["Si vous êtes pris(e) en charge par un tiers, vous pouvez joindre les attestations suivantes:\n- Une attestation de la banque du tiers justifiant de la programmation de virements réguliers vers votre compte.\n- Une attestation sur l'honneur de versement des sommes permettant d'atteindre le montant requis de 615€/mois à joindre avec un justificatif d'identité du tiers.",
+      "Dans le cas où vous êtes pris(e) en charge par un tiers, vous pouvez joindre les attestations suivantes:\n- Une attestation de la banque du tiers justifiant de la programmation de virements réguliers vers votre compte.\n- Une attestation sur l'honneur de versement des sommes permettant d'atteindre le montant requis de 615€/mois à joindre avec un justificatif d'identité du tiers.",
+      "Etant donnée que vous êtes pris(e) en charge par un tiers, vous pouvez joindre les attestations suivantes:\n- Une attestation de la banque du tiers justifiant de la programmation de virements réguliers vers votre compte.\n- Une attestation sur l'honneur de versement des sommes permettant d'atteindre le montant requis de 615€/mois à joindre avec un justificatif d'identité du tiers."]
+    },
+    {
+      "tag": "Employee FR",
+      "input": ["Je suis salarié", "Je suis étudiant salarié", "Étudiant salarié", "Salarié", "Je travail", "J'ai un job étudiant", "Oui! je suis salarié", "Oui! je suis étudiant salarié", "Je travail", "Oui! Je travail", "Oui! j'ai un job étudiant", "Je suis salariée", "Je suis étudiant salariée", "Étudiante salariée", "Salariée", "Oui! je suis salariée", "Oui! je suis étudiante salariée"],
+      "responses": ["Si vous êtes salarié(e), vous pouvez fournir vos trois derniéres fiches de paie.",
+      "Dans le cas où vous êtes salarié(e), vous pouvez fournir vos trois derniéres fiches de paie.",
+      "Etant donnée que vous êtes salarié(e), vous pouvez fournir vos trois derniéres fiches de paie."]
+    },
+    {
+      "tag": "Student with sufficient financial ressources FR",
+      "input": ["J'ai des ressources financières suffisantes!", "ressources financières suffisantes", "Je dispose de ressources financières suffisantes", "Oui! J'ai des ressources financières suffisantes", "Oui! Je dispose de ressources financières suffisantes", "J'ai des ressources suffisantes", "Oui ! j'ai des ressources suffisantes"],
+      "responses": ["Si vous disposez des ressources financières suffisantes vous devez fournir l'attestation bancaire de solde créditeur suffisant.",
+      "Dans le cas où vous disposez des ressources financières suffisantes vous devez fournir l'attestation bancaire de solde créditeur suffisant.",
+      "Etant donnée que vous disposez des ressources financières suffisantes vous devez fournir l'attestation bancaire de solde créditeur suffisant."]
+    },
+    {
+      "tag": "CAF FR",
+      "input":["Je souhaite savoir plus sur la CAF", "CAF", "C'est quoi la CAF?", "Aide au logement", "Aide au logement étudiant étranger", "Aide au logement étudiante étrangère", "Quelle aide au logement pour un étudiant étranger?", "Savoir plus sur la CAF", "Je souhaite savoir plus sur l'aide au logement"],
+      "responses": ["Les étudiants étrangers en France peuvent avoir des difficultés à louer un logement, particulièrement sur Paris ou les grandes villes universitaires. La Caisse d'Allocations Familiales (CAF) est un organisme français de droit privés, présent dans chaque département française qui verse certaines prestations destinées à lutter contre la pauvreté tel que le RSA ou la Prime d'activité, mais également des aides au logement tel que l'APL.",
+      "Comme tous les étudiant français, les étudiants étrangers en France peuvent avoir des difficultés à louer un logement, particulièrement sur Paris ou les grandes villes universitaires. La Caisse d'Allocations Familiales (CAF) est un organisme français de droit privés, présent dans chaque département français qui verse certaines prestations destinées à lutter contre la pauvreté tel que le RSA ou la Prime d'activité, mais également des aides au logement tel que l'APL.",
+      "Les étudiants étrangers en France peuvent rencontrer des difficultés pour trouver un logement, en particulier dans les grandes villes universitaires comme Paris. La CAF est une organisation de droit privé située dans chaque département français et offre des prestations pour lutter contre la pauvreté telles que le RSA ou la Prime d'activité, ainsi que des aides au logement telles que l'APL."]
+    },
+    {
+      "tag": "APL FR",
+      "input": ["Je souhaite savoir plus sur l'APL", "APL", "C'est quoi l'APL?", "Peux-je demande l'APL?", "Peux-je bénéficie de l'APL", "Aide personnalisée au logement", "Prestation CAF étudiant étranger", "Quelle prestation CAF pour les étudiants étrangers?", "Savoir plus sur l'APL", "Savoir plus sur l'aide personnalisée au logement"],
+      "responses": ["L'APL n'est pas spécifiquement destinée aux étudiants, elle s'adresse à toutes personnes ayant de faibles revenus. La bonne nouvelle c'est que même si vous êtes étudiant étranger vous pouvez prétendre à l'APL, cette aide peut faire toute la différence ! Toutefois, vous devez vous acquitter de certaines conditions obligatoires.",
+      "L'APL s'adresse à toutes les personnes ayant de faibles revenus et n'est pas spécifiquement destinée aux étudiants. La bonne nouvelle c'est que vous pouvez demander l'APL même si vous êtes étudiant étranger, ce qui peut faire toute la différence ! Mais vous devez respecter certaines conditions.",
+      "L'APL n'est pas spécifiquement destinée aux étudiants et s'adresse à toutes les personnes ayant de faibles revenus. La bonne nouvelle, c'est que même si vous êtes étudiant étranger, vous pouvez demander APL, ce qui peut faire toute la différence ! Cependant, il est nécessaire de respecter certaines conditions."]
+    },
+    {
+      "tag": "Apply to APL FR",
+      "input": ["Où déposer ma demande d'APL?", "Comment faire une demande d'APL?", "Demande APL", "Demander l'APL", "Démarche APL", "Formuler ma demande d'APL", "Comment formuler ma demande d'APL?", "Comment effectuer ma démarche d'APL?", "Je souhaite faire une demande d'APL", "Je sollicite un APL", "Où faire ma demande d'APL?"],
+      "responses": ["Les étudiants étrangers, comme les étudiants français doivent formuler leur demande en ligne sur le site internet de la caf ci-dessous:\nhttps://wwwd.caf.fr/wps/portal/caffr/aidesetdemarches/mesdemarches/faireunedemandedeprestation#DAL\n\nEn remplissant votre demande vous devez préciser que vous n'êtes pas allocataire, en effet, comme c'est votre première demande vous ne possédez pas d'espace personnel sur le site de la CAF. Donc il faut que vous créiez un nouveau compte. Une fois que cela est fait vous pourrez vous connecter à votre compte CAF en ligne.",
+      "Les étudiants étrangers, tout comme les étudiants français, doivent remplir leur demande en ligne sur le site internet de la Caf en suivant les instructions suivantes:\nRendez-vous sur le site Web suivant:\nhttps://wwwd.caf.fr/wps/portal/caffr/aidesetdemarches/mesdemarches/faireunedemandedeprestation#DALVous\npuis indiquer dans votre demande que vous n'êtes pas allocataire. Vue que c'est votre première demande et donc vous n'avez pas d'espace personnel sur le site internet de la CAF. Par conséquent, vous devez créer un nouveau compte. Une fois terminé, vous pourrez accéder à votre compte CAF en ligne."]
+    },
+    {
+      "tag": "APL requirements FR",
+      "input": ["Comment prétendre à l'APL?", "Conditions d'attribution d'APL", "Conditions d'APL", "Suis-je éligible à l'APL", "Est ce que je suis éligible à l'APL?", "Quelles sont les conditions d'attribution de l'APL?", "Quelles sont les conditions d'APL?", "Je souhaite savoir plus sur les conditions de l'APL", "Savoir plus sur les conditions d'attribution de l'APL?"],
+      "responses": ["Pour prétendre de l'APL il faut: \n- Habiter 8 mois minimum dans votre logement étudiant au cours de l'année. \n- Votre logement fait l'objet d'une convention par l'état comme les cités universitaires, les foyers HLM, les logements sociaux, etc.\nAttention : Si vos parents vivent également en France et perçoivent des allocations familiales ces derniers peuvent se voir retirer cette prestation si vous faites une demande d'APL. La règle est la même pour les ressortissants français. De plus si vous habitez en colocation et que vous faites une demande d'APL, votre colocataire se verra dans l'obligatoire d'en faire également, s'il ne fait pas la demande d'APL cela peut impacter votre éligibilité.",
+      "Pour être éligible l'APL, il faut que vous habitiez au moins 8 mois dans votre logement étudiant au cours de l'année et que votre logement fait l'objet d'une convention gouvernementale telle que les cités universitaires, les foyers HLM, les logements sociaux, etc. Si vos parents résident également en France et reçoivent des allocations familiales, il est possible que cette prestation leur soit retirée si vous demandez une APL. Les citoyens français sont soumis à la même réglementation. De plus, si vous habitez en colocation et faites une demande d'APL, votre colocataire doit également en faire, sinon cela peut affecter votre éligibilité."]
+    },
+    {
+      "tag": "APL calculation FR",
+      "input": ["Je souhaite faire une simulation de mes droits d'APL", "Je souhaite faire une simulation de mes prestations d'APL", "Comment-a-t-il calculé l'APL?", "Calcul d'APL", "Montant d'APL", "Simulation d'APL", "Calcul d'APL", "Quel montant d'APL?", "Savoir plus sur le montant de l'APL"],
+      "responses": ["L'APL est calculée en fonction du montant du loyer, de vos ressources (revenus des parents, vos revenus, prestations familiales), son attribution n'est donc pas automatique, et son montant peut dépendre de votre situation. Pour simuler le montant d'aide APL, veuillez s'il vous plait consulter les site internet suivant:\nhttps://wwwd.caf.fr/wps/portal/caffr/aidesetdemarches/mesdemarches/faireunesimulation/lelogement#/preparation. Merci!",
+      "L'attribution de l'APL n'est pas automatique et peut dépendre de votre situation. En effet, le montant de l'APL peut varier en fonction du montant du loyer, de vos ressources (revenus des parents, vos revenus, prestations familiales). Pour faire une simulation de montant de votre aide d'APL, veuillez s'il vous consulter les site internet suivant:\nhttps://wwwd.caf.fr/wps/portal/caffr/aidesetdemarches/mesdemarches/faireunesimulation/lelogement#/preparation. Merc!"]
+    },
+    {
+      "tag": "Supporting documents APL FR",
+      "input":["Je souhaite savoir plus sur les pièces justificatives pour demander l'APL", "Je souhaite savoir plus sur les documents nécessaires pour formuler ma demande d'APL", "Pièces justificatives APL", "Quelles sont les pièces justificatives pour demander l'APL?", "Savoir plus sur les Pièces justificatives pour demander l'APL"],
+      "responses": ["Pour formuler votre demande d'APL vous devez obligatoirement avoir un compte bancaire français et donc fournir un RIB. Il vous faut également:\n1. Votre contrat de bail.\n2. Une attestation de domicile, remplie par le propriétaire du logement.\n3. Un justificatif de vos revenus sur les deux dernières années, vous pouvez fournir les déclarations de revenus de ces deux dernières années de votre pays d'origine.\n4. Votre carte d'identité nationale ou passeport, ainsi que votre extrait d'acte de naissance avec une traduction certifiée en français.\n\nSi vous êtes citoyen de l'UE vous devrez fournir une attestation d'inscription à l'université et votre carte d'assurance Européenne d'assurance maladie.\nSi vous êtes non-européen vous devrez joindre un titre de séjour qui soit valide au minimum pour toute l'année universitaire en cours ainsi qu'un justificatif d'inscription au régime de la sécurité sociale étudiante Ameli.",
+      "Pour faire une demande d'APL, vous devez avoir un compte bancaire en France et fournir un RIB. De plus, vous devez fournir:\n1. Votre contrat de bail.\n2. Une attestation de domicile remplie par le propriétaire du logement.\n3. Pour justifier vos revenus des deux dernières années, vous pouvez fournir des déclarations de revenus de ces deux dernières années provenant de votre pays d'origine.\n4. Un passeport ou une carte d'identité nationale, ainsi qu'un extrait d'acte de naissance avec une traduction certifiée en français.\nVous devrez fournir une attestation d'inscription à l'université ainsi qu'une carte d'assurance maladie Européenne si vous êtes citoyen de l'UE.\nSi vous n'êtes pas européen, vous devrez joindre au moins un titre de séjour valide pour toute l'année."]
+    },
+    {
+      "tag": "First APL payment FR",
+      "input": ["Quand peux-je reçois ma première versement d'APL?", "Première versement d'APL", "Quand recevoir ma première versement d'APL", "Quand sera ma première versement d'APL?", "A partir de quand peux-je reçois ma première versement d'APL?", "Première versement d'APL"],
+      "responses": ["Comme vous ne pourrez pas faire une demande d'APL qu'après votre emménagement, vous recevez votre premier versement au moins un mois après votre emménagement. Par exemple, Si vous emménagez au mois de septembre votre premier versement peut commencer seulement au début du mois d'octobre.",
+      "Vue que vous ne pourrez pas faire une demande d'APL qu'après votre emménagement, vous recevrez votre premier versement au moins un mois après votre emménagement. Par exemple, si vous emménagez en septembre, votre premier versement ne peut commencer qu'au début d'octobre."]
+    },
+    {
+      "tag": "Health insurance FR",
+      "input": ["Je souhaite savoir plus sur la sécurité sociale", "Sécurité sociale", "C'est quoi la sécurité sociale?", "Ameli", "Peux-je bénéficie d'une couverture sociale en France?", "Quelle couverture sociale en France?", "Savoir plus sur la sécurite sociale"],
+      "responses": ["La sécurité sociale vous permet de bénéficier de la prise en charge de vos frais de santé durant votre séjour en France.",
+      "Pendant votre séjour en France, vous pouvez bénéficier de la prise en charge de vos frais de santé grâce à la sécurité sociale."]
+    },
+    {
+      "tag" : "Apply for health insurance FR",
+      "input" : ["Je souhaite m'inscrire à la sécurité sociale", "Comment faire ma demande de sécurite sociale?", "S'inscrire à la sécurité sociale", "Où puis-je formule ma demande de securité sociale?"],
+      "responses" : ["Il y a trois étapes à prevoir pour s'inscrire à la sécurité sociale. Pouvez-vous s'il vous plait m'indiquer quelle phase vous aimeriez en savoir plus? Merci !",
+      "Lors d'une demande de sécurité sociale, il y a trois phase à prendre en compte. Auriez-vous l'amabilité de m'indiquer quelle phase vous aimeriez en savoir plus? Merci!"]
+    },
+    {
+      "tag": "First stage health insurance FR",
+      "input": ["Phase 1", "La première phase de demande de sécurité sociale", "Phase 1 sécurité sociale", "Première phase sécurité sociale", "Quelle est la première phase de demande de sécurité sociale?", "Quelle est la phase 1 de demande de sécurité sociale?", "En quoi consiste la première phase de demande de sécurité sociale", "En quoi consiste la phase 1 de demande de sécurité sociale", "Savoir plus sur la première phase de demande de sécurité sociale", "Je souhaite savoir plus sur la première phase de demande de sécurité sociale", "Je souhaite savoir plus sur la phase 1 de demande de sécurité sociale" ],
+      "responses": ["Dans cette phase, la sécurité sociale vous demande de saisir vos informations personnelles et de déposer les documents justificatifs afin de créer votre espace personne sur le site internet de la sécurité social ci-dessous:\nhttps://étudiant-etranger.ameli.fr/#/.",
+      "Dans la première phase de votre demande et afin de créer votre espace personnel, la sécurité sociale vous demande de saisir vos informations personnelles et de déposer les documents justificatifs sur le site internet ci-dessous:\nhttps://étudiant-etranger.ameli.fr/#/",
+      "Quant à cette phase de votre demande de sécurité sociale vous devez saisir vos informations personnelles et de déposer les documents justificatifs sur le site internet de la sécurité sociale ci-dessous:\nhttps://étudiant-etranger.ameli.fr/#/"]
+    },
+    {
+      "tag": "Supporting documents health insurance FR",
+      "input": ["Pieces justificatives sécurité sociale?", "Je souhaite savoir quels sont les documents nécessaires pour formuler ma demande de sécurité sociale", "Quelles sont les pièces justificatives pour adhérer à la sécurité sociale?", "Quels sont les documents nécessaires pour formuler ma demander de sécurité sociale?", "Quelles sont les Pieces justificatives pour formuler ma demande de sécurité sociale?", "Quelles sont les pièces justificatives pour adhérer à la sécurité sociale?"],
+      "responses": ["Les Pièces justificatives pour formuler votre demande de sécurité sociale sont les suivants:\n\n1. Votre titre de séjour.\n2. Une attestation de scolarité pour l'année universitaire en cours.\n3. Votre IBAN ou RIB pour toute remboursement des frais de santé en France.\n4. Des pièce d'état civil nécessaire à la création de votre numéro d'identification, couramment appelé numéro de sécurité sociale.\n\nDes accords et conventions internationales peuvent prévoir d'autres justificatifs, reportez-vous s'il vous plait au site internet de la sécurité sociale ci-dessous puis au chapitre 'Autres documents pour votre inscription selon votre pays d'origine'.\n\nhttps://www.ameli.fr/llle-et-vilaine/assure/droits-demarches/etudes-stages/étudiant/vous-venez-etudier-en-France#text_77155",
+      "Votre demande de sécurité sociale nécessite les documents suivants :\n1. Votre titre de séjour.\n2. Un certificat de scolarité pour l'année universitaire en cours.\n3. Pour tout remboursement de frais de santé en France, fournissez votre IBAN ou votre RIB.\n4. Des documents d'état civil nécessaires pour obtenir votre numéro d'identification, également connu sous le nom de numéro de sécurité sociale.\nD'autres justificatifs peuvent être fournis suite à des accords et conventions internationales. Consultez le site internet de la sécurité sociale ci-dessous, puis le chapitre 'Autres documents pour votre inscription selon votre pays d'origine'.\nhttps://www.ameli.fr/llle-et-vilaine/assure/droits-demarches/etudes-stages/étudiant/vous-venez-etudier-en-France#text_77155"]
+    },
+    {
+      "tag": "Civil state health insurance FR",
+      "input": ["Justificatif état civil sécurité sociale", "Etat civil sécurité sociale ", "état civil sécurité sociale", "Je souhaite savoir quel justificatif d'état civil dont j'ai besoin pour ma demande de sécurité sociale?", "Qu’est-ce que le justificatif de l'état civil pour une demande de sécurité sociale?", "Quel est le document d'état civil à fournir pour ma demande de sécurité sociale", "Peux-je joindre quoi comme document pour l'état civil dans ma demande sécurité sociale?"],
+      "responses": ["Les pièces d'état civil acceptées peuvent être:\n- une copie intégrale de l'acte de naissance.\n- un extrait d'acte de naissance avec filiation (ou toute pièce établie par un consulat).\n- un livret de famille.\n- un acte de mariage.",
+      "Quant à l'état civil il vaut faut fournir l'un des pièces suivantes:\n- un extrait d'acte de naissance avec filiation (ou toute pièce établie par un consulat).\n- un livret de famille.\n- un acte de mariage."]
+    },
+    {
+      "tag": "RIB FR",
+      "input": ["RIB", "Le RIB", "savoir plus sur le RIB", "C'est quoi le RIB?","Je souhaite savoir plus sur le RIB", "Pourquoi un RIB?", "Savoir plus sur le RIB"],
+      "responses": ["Le RIB ou Relevé d’Identité Bancaire est un document utilisé en France pour identifier le titulaire d’un compte bancaire et préciser quelles sont ses coordonnées bancaires. Grâce à ce document, vous pouvez communiquer à vos contreparties (émetteurs de virements, créanciers qui se font payer par prélèvement, etc.) votre domiciliation bancaire afin de recevoir des virements ou régler certaines dépenses par prélèvement, par exemple.",
+      "En France, le RIB ou le Relevé d'Identité Bancaire est un document utilisé pour identifier le titulaire d'un compte bancaire et préciser ses coordonnées bancaires. Vous pouvez utiliser ce document pour communiquer votre domiciliation bancaire à vos contreparties (émetteurs de virements, créanciers qui se font payer par prélèvement, etc.) afin de recevoir des virements ou régler des frais par prélèvement, par exemple.",
+      "En France, le RIB, également appelé Relevé d'Identité Bancaire, est un document qui permet d'identifier le titulaire d'un compte bancaire et de préciser ses coordonnées bancaires. Vous pouvez utiliser ce document pour informer vos contreparties (émetteurs de virements, créanciers qui se font payer par prélèvement...) de votre adresse bancaire afin de recevoir des virements ou de régler des frais par prélèvement, par exemple."]
+    },
+    {
+      "tag": "IBAN FR",
+      "input": ["IBAN", "L'IBAN, c'est quoi?", "C'est quoi l'IBAN", "Je souhaite savoir plus sur l'IBAN", "L'IBAN", "Savoir plus sut l'IBAN", "Je souhaite savoir plus sut l'IBAN"],
+      "responses": ["L'IBAN ou International Banking Account Number est l’identifiant du compte bancaire répondant à la norme internationale ISO 13616. En France, il est composé de 27 caractères, commençant par FR suivi de 2 caractères puis des 23 chiffres de l’ancien RIB (code de l’établissement bancaire, code du guichet, n° de compte et la clé RIB).",
+      "L'identifiant du compte bancaire conforme à la norme internationale ISO 13616 est connu sous le nom d'IBAN ou numéro de compte bancaire international. En France, il est constitué de 27 lettres, en commençant par la lettre FR, suivie de 2 lettres puis des 23 chiffres de l'ancien RIB (code de l'établissement bancaire, code du guichet, n° de compte et la clé RIB).",
+      "L'identifiant du compte bancaire conforme à la norme internationale ISO 13616 est appelé compte bancaire international ou IBAN. En France, il est constitué de 27 chiffres, en commençant par FR suivi de 2 caractères puis des 23 chiffres de l'ancien RIB (code de l'établissement bancaire, code du guichet, n° de compte et la clé RIB)."]
+    },
+    {
+      "tag": "Second stage health insurance FR",
+      "input": ["Je souhaite savoir plus sur la deuxième phase de demande de la sécurité sociale", "Je souhaite savoir plus sur la phase 2 de demande de la sécurité sociale", "Phase 2", "La deuxième phase de demande de sécurité sociale", "Deuxième phase sécurité sociale", "Quelle est la deuxième phase de demande de sécurité sociale?", "Quelle est la phase 2 de demande de sécurité sociale?", "En quoi consiste la deuxième phase de demande de sécurité sociale", "En quoi consiste la phase 2 de demande de sécurité sociale", "Savoir plus sur la phase 2 de demande de la sécurité sociale", "Savoir plus sur la deuxième phase de demande de la sécurité sociale"],
+      "responses": ["Afin de garantir la bonne prise en charge de vos frais de santé en France, il est essentiel de télécharger votre attestation provisoire depuis votre espace personnel sur le site internet de la sécurité sociale ci-dessous:\nhttps://étudiant-etranger.ameli.fr. Cela vous permet de:\n\n- Déclarer un médecin traitant.\n- Adhérer à une complémentaire santé.",
+      "Pour la deuxième phase de votre demande de sécurité sociale, vous devez télécharger votre attestation provisoire depuis votre espace personnel sur le site internet de la sécurité sociale ci-dessous:\nhttps://étudiant-etranger.ameli.fr afin de vous assurer que vos frais de santé seront correctement pris en charge par la sécurité sociale.\nEn effet, cela vous permet de : \n- Déclarer un médecin traitant. \n- Adhérer à une complémentaire santé.",
+      "Quant à la deuxième phase de votre demande de sécurité sociale, vous devez télécharger votre attestation provisoire depuis votre espace personnel sur le site internet de la sécurité sociale ci-dessous:\nhttps://étudiant-etranger.ameli.fr afin de vous assurer que vos frais de santé seront correctement pris en charge par la sécurité sociale.\nEn effet, cela vous permet de : \n- Déclarer un médecin traitant. \n- Adhérer à une complémentaire santé."]
+    },
+    {
+      "tag": "Third stage health insurance FR",
+      "input": ["Je souhaite savoir plus sur la troisième phase de demande de la sécurité sociale", "Je souhaite savoir plus sur la phase 3 de demande de la sécurité sociale", "Phase 3", "La troisième phase de demande de sécurité sociale", "Troisième phase sécurité sociale", "Quelle est la troisième phase de demande de sécurité sociale?", "Quelle est la phase 3 de demande de sécurité sociale?", "En quoi consiste la troisième phase de demande de sécurité sociale", "En quoi consiste la phase 3 de demande de sécurité sociale", "Savoir plus sur la phase 3 de demande de la sécurité sociale", "Savoir plus sur la troisième phase de demande de la sécurité sociale"],
+      "responses": ["Dès l'obtention de votre numéro de sécurité sociale, vous pouvez:\n- Télécharger votre attestation définitive depuis votre espace personnel sur le site internet de la sécurité sociale ci-dessous:\nhttps:\\étudiant-etranger.ameli.fr.\n- Recevoir un formulaire à compléter et à renvoyer afin de demander votre carte Vitale.\n- Ouvrir un compte Ameli. \n- Télécharger l'application mobile du compte Ameli.",
+      "Pour la troisième phase de votre demande de sécurité social vous aurez la possibilité de télécharger votre attestation définitive depuis votre espace personnel sur le site internet de la sécurité sociale ci-dessous:\nhttps://étudiant-etranger.ameli.fr. \nDe plus, après avoir reçu votre numéro de sécurité sociale, vous allez aussi recevoir un formulaire à remplir et à retourner par courrier pour ouvrir un compte Ameli afin de demander une carte vitale depuis l'application mobile Ameli.",
+      "Après avoir reçu votre numéro de sécurité sociale, vous pourrez télécharger votre attestation définitive depuis votre espace personnel sur le site internet de la sécurité sociale ci-dessous:\nhttps://étudiant-etranger.ameli.fr. \nAfin de demander une carte vitale via l'application mobile Ameli, vous recevrez également un formulaire à remplir et à retourner par courrier."]
+    },
+    {
+      "tag": "Preferred doctor FR",
+      "input": ["Je souhaite savoir plus sur le médecin traitant", "Médecin traitant", "Pourquoi un médecin traitant?", "C'est quoi un médecin traitant?", "Que ce que c'est un médecin traitant?", "A quoi sert d'avoir un médecin traitant?"],
+      "responses": ["Un médecin traitant vous garantit un meilleur suivi médical et des soins mieux remboursés de la sécurité sociale.",
+      "Un médecin traitant vous permet d'avoir un suivi médical et des soins mieux remboursés par la sécurité sociale.",
+      "Pour mieux rembourser vos soins par la sécurité sociale et avoir un meilleur suivi médical, il faut dessiner un médecin traitant."]
+    },
+    {
+      "tag": "Supplementary health insurance FR",
+      "input": ["Mutuelle étudiante", "Complémentaire santé?", "Pourquoi avoir une complémentaire santé?", "C'est quoi une complémentaire santé?", "A quoi sert d'avoir une complémentaire santé?", "Une complémentaire de santé, c'est quoi?", "Savoir plus sur la complémentaire santé", "Je souhaite savoir plus sur la complémentaire santé"],
+      "responses": ["La complémentaire santé sert à compléter vos remboursements de l'Assurance Maladie et diminuer votre reste à charge, qui est de l'ordre de 30%.",
+      "Afin de réduire votre reste à charge, vous pouvez demander une complémentaire santé qui sert à compléter vos remboursements qui sont de l'ordre de 70%.",
+      "La sécurité sociale offre la possibilité de compléter vos remboursements en adhérant à une Complémentaire santé. Cela sert à diminuer votre reste à charge qui est de l'ordre de 30%."]
+    },
+    {
+      "tag": "Apply for Supplementary health insurance FR",
+      "input": ["Je souhaite demander une complémentaire santé", "Comment demander une complémentaire santé?", "Comment demander une mutuelle étudiante?", "Comment avoir une complémentaire de santé?", "Où déposer ma demande de complémentaire santé?", "Comment formuler ma demande de complémentaire santé?", "Où faire ma demande de complémentaire santé"],
+      "responses": ["En tant que étudiant étranger vous pouvez bénéficier, sous certaines conditions, d'une complémentaire santé totalement gratuite en formulant votre demande depuis votre compte Ameli, 'Mes démarches' puis 'Complémentaire santé solidaire'. N'oubliez pas de vous menez de votre avis d'imposition complet ou de situation déclarative à l'impôt sur le revenu.",
+      "En tant qu'étudiant étranger, la sécurité sociale peut vous accorder, sous certaines conditions, une complémentaire de santé totalement gratuite. Pour demander ceci veuillez s'il vous plait formuler votre demande depuis votre compte Ameli, 'Mes démarches' puis 'Complémentaire santé solidaire'. N'oubliez pas de vous mener de votre avis d'imposition complet ou de situation déclarative à l'impôt sur le revenu.",
+      "Les étudiants étrangers peuvent bénéficier, sous certaines conditions, d'une complémentaire de santé totalement gratuite. Pour formuler votre demander veuillez s'il vous plait précéder depuis votre compte Ameli, 'Mes démarches' puis 'Complémentaire santé solidaire'. N'oubliez pas de vous mener de votre avis d'imposition complet ou de situation déclarative à l'impôt sur le revenu."]
+    },
+    {
+      "tag" : "Health insurance account FR",
+      "input": ["Je souhaite savoir plus sur le compte Ameli", "Compte Ameli", "A quoi sert le compte Ameli?", "C'est quoi le compte Ameli", "Pourquoi avoir un compte Ameli?", "Savoir plus sur le compte Ameli"],
+      "responses": ["Le compte Ameli permet de suivre vous remboursements, modifier vous informations personnelles, poser vos questions via ameliBot, qui présente le chatbot de l'assurance Maladie.",
+      "Avec votre compte Ameli, vous pouvez suivre vos remboursements, modifier vos informations personnelles et poser des questions avec ameliBot, le chatbot de l'assurance maladie.",
+      "La sécurité sociale mis à votre disposition un compte personnel. Celle-ci vous permet de suivre vos remboursements, modifier vos informations personnelles et poser des questions avec ameliBot, le chatbot de l'assurance maladie."]
+    },
+    {
+      "tag": "Health insurance card FR",
+      "input": ["Je souhaite savoir plus sur la carte vitale", "Carte vitale", "C'est quoi la carte vitale", "A quoi sert la carte vitale", "Pourquoi avoir une carte vitale?"],
+      "responses": ["Votre carte Vitale contient tous les renseignements nécessaires au remboursement de vos frais de santé en France. En la présentant à votre médecin, vous avez ainsi l'assurance d'être automatiquement remboursé en une semaine, sans avoir besoin d'envoyer de feuille de soins.\n Attention : Il est nécessaire de mettre à jour votre carte vitale une fois par an !",
+      "En France, votre carte Vitale contient toutes les informations nécessaires pour rembourser vos frais de santé. En la présentant à votre médecin, vous avez l'assurance d'être automatiquement remboursé en une semaine sans avoir besoin d'envoyer de feuille de soins.\nAttention : votre carte vitale doit être mise à jour une fois par an !",
+      "Votre carte Vitale contient toutes les informations dont vous avez besoin pour rembourser vos frais de santé en France. Vous avez l'assurance d'être automatiquement remboursé en une semaine sans avoir besoin d'envoyer de feuille de soins en la présentant à votre médecin. \nAttention : votre carte vitale doit être mise à jour chaque an !"]
+    },
+    {
+      "tag": "Apply for health insurance card FR",
+      "input": ["Je souhaite commander une carte vitale", "Commander ma carte vitale", "Où demander ma carte vitale?", "Comment commander ma carte vitale?", "Comment avoir une carte vitale?"],
+      "responses": ["Vous pouvez commander votre carte vitale depuis votre compte Ameli, 'Mes démarches', puis 'Carte Vitale'.",
+      "Vous avez la possibilité de demander votre carte vitale à partir de votre compte Ameli, en cliquant sur 'Mes démarches' puis 'Carte Vitale'.",
+      "Pour demander votre carte vitale, vous pouvez utiliser votre compte Ameli. Naviguez-vous à 'Mes démarches' puis sélectionnez 'Carte Vitale'."]
+    },
+    {
+      "tag": "Update health insurance card FR",
+      "input": ["Je souhaite mettre à jour ma carte vitale", "Mettre à jour ma carte vitale", "Comment mettre à jour ma carte vitale?", "Où mettre à jour ma carte vitale?", "Comment faire pour mettre à jour ma carte vitale?"],
+      "responses": ["Pour mettre à jour votre carte vitale, veuillez-vous rendre chez la pharmacie la plus proche de chez vous.",
+      "Veuillez s'il vous plait vous rendre à la pharmacie la plus proche de chez vous pour mettre à jour votre carte vitale.",
+      "Afin de mettre à jour votre carte vitale, Veuillez s'il vous plait vous rendre à la pharmacie la plus proche de chez vous."]
+    },
+    {
+      "tag": "Download Ameli app FR",
+      "input": ["Je souhaite télécharger l'application Ameli", "Je souhaite télécharger l'app Ameli", "Application Ameli", "Comment télécharger l'application Ameli?", "Télécharger l'application Ameli", "Où télécharger l'application Ameli", "App Ameli", "Télécharger l'app Ameli", "Où télécharger l'app Ameli?", "Comment télécharger l'app Ameli?"],
+      "responses": ["L'application Ameli peut être télécharger sur le google play store via l'adresse ci-dessous:\nhttps://play.google.com/store/apps/datasafety?id=fr.cnamts.it.activity&hl=fr&gl=US",
+      "Le téléchargement de l'application Ameli peut être effectué sur le Google Play Store à l'adresse suivante:\nhttps://play.google.com/store/apps/datasafety?id=fr.cnamts.it.activity&hl=fr&gl=US",
+      "Si vous souhaitez télécharger l'application Ameli, vous pouvez faire cela via l'adresse ci-dessous:\nhttps://play.google.com/store/apps/datasafety?id=fr.cnamts.it.activity&hl=fr&gl=US"]
+    },
+    {
+      "tag": "unknown FR",
+      "input": ["Pas de quoi!", "Appelle-moi!", "Nouvelle année", "Comment tu vas?", "Je vais bien", "Tu-vas bien?", "Oh la la", "C'est pas ça!" , "Ah ouais!", "Non!", "blabla", "Tu rigoles", "Arrêtes!", "Pas ça", "Pièce", "Pieces", "Ahah!", "hhhhhhhhhhhhhhhhh", "N'importe quoi!", "Mais non c'est faux", "C'est faux!", "Mais que ce que vous racontez?", "Je comprend pas", "Vous êtes nul", "Oppa", "klklklklkbhghg", "gggfgfgfgsfsq", "ghhghfh", "dsjkghjdhjgh", "Rien", "Pourquoi ça!!", "Tu trompes", "Voilà", "hggsfgsfhjqj", "kjkjkjkjsvbsnb", "Alors ça!", "ffdffdfd", "gfsghjhjsdwjghd", "Je comprens pas", "hghsghjhjdghjqdhjgdhjfsghdfgghdhjvfchghdgfd", "hgdhghdsvqhjvdqhpauuzguapeljhhe", "ghjqsqghjgqdyfyjzaydzfhjdfvhedpqpqkjkqe", "Rien de tout", "lkljkslkjdklqhlhlhjkhqjkdfcjlqchlfchqkljfqhkqh", "vbvbvhfhyzfhyjgsjgqskjh", "lmkldjkldqhjkdjkqgdkgdhjqvdhjbncvfzayjguz", "jhjkqgwjkdgqjkggvilvhjkV"],
+      "responses": ["Pardon! Mais j'ai pas pu trouver de reponse à votre question. Veuillez s'il vous plait essayer les proposition suivantes :\nValider mon visa, titre de sèjour, CAF ou sécurité sociale. Merci !",
+      "Excuse-moi! Mais je ne trouve pas des réponses à votre demande. Veuillez s'il vous plait prendre en considération les suggestions suivantes :\nValider mon visa, titre de séjour, CAF ou sécurité sociale. Merci !",
+      "Oops! Je ne trouve pas des réponses à votre question. Veuillez s'il vous plait essayer les suggestions suivantes : \nValider mon visa, titre de séjour, CAF ou sécurité sociale. Merci !"]
+  }
+]
+}
