@@ -1,22 +1,21 @@
 package com.example.frenshichatbotandroidapp.control
 
-import com.example.frenshichatbotandroidapp.data.FrenShiEN
-import com.example.frenshichatbotandroidapp.data.FrenShiFR
+import com.example.frenshichatbotandroidapp.data.FrenShi
 
-class FrenshiFRController(val frenShiFR: FrenShiFR) {
+class FrenShiController(val frenShi: FrenShi) {
     fun onFrenShiInit(){
-        frenShiFR.initPrediction()
+        frenShi.initPrediction()
     }
     fun onFrenShiPredict(userInputText: String){
-        frenShiFR.predictResponse(userInputText)
+        frenShi.predict(userInputText)
     }
 
 }
-class FrenshiENController(val frenShiEN: FrenShiEN) {
+/*class FrenshiENController(val frenShiEN: FrenShiEN) {
     fun onFrenshiInit(){
         frenShiEN.initPrediction()
     }
     fun onFrenShiPredict(userInputText: String){
         frenShiEN.predictResponse(userInputText)
     }
-}
+}*/
