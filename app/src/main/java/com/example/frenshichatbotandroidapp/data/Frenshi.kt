@@ -21,13 +21,13 @@ class FrenShi(
         private val context: Context,
         private val modelAssetsName: String,
         private val vocabAssetsName: String,
-        private val versionFrenshi: String,
+        versionFrenShi: String,
         private val database: FrenShiDatabase
 ) : MachineLearningModel {
                 private lateinit var vocabData: HashMap<String, Int>
                 private lateinit var tfLiteInterpreter: Interpreter
                 private lateinit var answer : String
-                private val tags : List<String> = if(versionFrenshi == "EN"){
+                private val tags : List<String> = if(versionFrenShi == "EN"){
                         listOf("APL EN",
                                 "APL calculation EN",
                                 "APL requirements EN",
@@ -142,7 +142,6 @@ class FrenShi(
                 }
                 private fun queryAnswer(answerTag: String) {
                         val answerDatabase = database.FrenShiDataDao().getResponse(answerTag)
-                        Log.d("Answer from database", "$answerDatabase")
                         setAnswer(answerDatabase)
                 }
                 override fun initPrediction() {
