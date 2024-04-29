@@ -23,6 +23,6 @@ data class FrenShiRecordNetwork(
     @SerialName("responses")
     val responses:MutableList<String>
 ) {
-    fun toFrenShiResponsesRoom()= FrenShiresponsesRoom(UUID.randomUUID().toString(), tag, responses[0])
+    fun toFrenShiResponsesRoom()= FrenShiresponsesRoom(UUID.randomUUID().toString(), tag, responses[(0..1).random()])
     //fun toFrenShiInputsRoom()= FrenShiInputsRoom(UUID.randomUUID().toString(), tag, inputs[0])
 }

@@ -59,7 +59,7 @@ fun AppGUIView(
     Column (){
         LazyColumn(
             Modifier.weight(1f)
-            .padding(top = 50.dp, bottom = 20.dp),
+            .padding(bottom = 20.dp),
             state = lazyColumnListState,
             verticalArrangement = Arrangement.Bottom) {
             coroutineScope.launch { //always scroll to the last item in the messages list

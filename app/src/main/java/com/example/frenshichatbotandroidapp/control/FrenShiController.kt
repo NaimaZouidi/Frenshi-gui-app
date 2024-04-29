@@ -1,7 +1,9 @@
 package com.example.frenshichatbotandroidapp.control
 
 import com.example.frenshichatbotandroidapp.data.FrenShi
-
+/**!
+ * A class implementing a controller for FrenShi chatbot
+ */
 class FrenShiController(val frenShi: FrenShi, val messagesController: MessagesController) {
     fun onFrenShiInit(){
         frenShi.initPrediction()
