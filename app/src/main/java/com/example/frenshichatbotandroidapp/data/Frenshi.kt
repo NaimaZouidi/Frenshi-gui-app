@@ -144,7 +144,6 @@ class FrenShi(
                         val answerDatabase = database.FrenShiDataDao().getResponse(answerTag)
                         Log.d("Answer from database", "$answerDatabase")
                         setAnswer(answerDatabase)
-                //return database.FrenShiDataDao().getResponse(tags[answerTagIndex])
                 }
                 override fun initPrediction() {
                         CoroutineScope(Dispatchers.Default).launch {
@@ -153,9 +152,6 @@ class FrenShi(
                                 if (vocab != null && interpreter != null) {
                                         this@FrenShi.vocabData = vocab
                                         this@FrenShi.tfLiteInterpreter = interpreter
-                                        /*withContext( Dispatchers.Main ) {
-                                            onComplete()
-                                        }*/
                                 } else {
                                         throw Exception("Could not load model")
                                 }
@@ -172,7 +168,7 @@ class FrenShi(
                                 val outputs: Array<FloatArray> = arrayOf(FloatArray(OUTPUT_LENGTH))
                                 tfLiteInterpreter.run(inputs, outputs) //run model inference
                                 val answerTagIndex = argMax(outputs[0])
-                                val answerTag = tags[answerTagIndex-1]
+                                val answerTag = tags[answerTagIndex]
                                 queryAnswer(answerTag)
                                 onComplete(answer)
                         }
