@@ -1,5 +1,6 @@
 package com.example.frenshichatbotandroidapp.view
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -10,10 +11,10 @@ import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.drawBehind
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
@@ -27,19 +28,17 @@ import com.example.frenshichatbotandroidapp.ui.theme.FrenShiColors
 fun FrenShiView(frenShiResponseText: String, frenShiResponseDate: String) {
     Column(
         Modifier
-            .padding(5.dp)
+            .padding(top=10.dp)
             .fillMaxSize()) {
         Text(text = frenShiResponseDate, textAlign = TextAlign.Center, modifier = Modifier.fillMaxWidth())
         Row(modifier = Modifier.padding(start = 60.dp)) {
-                Text(
-                    text = stringResource(id = R.string.frenshi), fontSize = 20.sp,
-                    color = FrenShiColors.White, modifier = Modifier.drawBehind {
+                    Image(painter = painterResource(id = R.drawable.frenshi), contentDescription = "f", modifier = Modifier.drawBehind {
                         drawCircle(
-                            color = FrenShiColors.Gray,
+                            color = FrenShiColors.Black,
                             radius = this.size.maxDimension
                         )
                     }
-                )
+                    )
                 Text(
                     text = frenShiResponseText,
                     color = FrenShiColors.White,
@@ -47,8 +46,9 @@ fun FrenShiView(frenShiResponseText: String, frenShiResponseDate: String) {
                     modifier = Modifier
                         .padding(start = 30.dp, end = 25.dp)
                         .clip(RoundedCornerShape(5.dp))
-                        .background(FrenShiColors.Gray)
-                        .wrapContentSize().padding(9.dp)
+                        .background(FrenShiColors.Black)
+                        .wrapContentSize()
+                        .padding(9.dp)
                 )
             }
     }
@@ -67,7 +67,8 @@ fun UserInputView(userMsgTextRetrieved: String, userMsgDateRetrieved: String) {
                 textAlign = TextAlign.Left, modifier = Modifier
                     .padding(end = 25.dp)
                     .clip(RoundedCornerShape(7.dp))
-                    .background(FrenShiColors.Blue)
-                    .wrapContentSize().padding(9.dp))
+                    .background(FrenShiColors.Red)
+                    .wrapContentSize()
+                    .padding(9.dp))
     }
 }
