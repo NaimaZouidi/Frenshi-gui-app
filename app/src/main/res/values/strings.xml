@@ -7,4 +7,5 @@
     <string name="default_time" translatable="false"> 00:00 </string>
     <string name="default_user_inputEN"> Ask me a question.. </string>
     <string name="Button_content_description_EN"> Send button </string>
+    <string name="title_activity_chat">ChatActivity</string>
 </resources>

@@ -1,10 +1,13 @@
 package com.example.frenshichatbotandroidapp.view
 
 import android.annotation.SuppressLint
+import android.os.Build.VERSION.SDK_INT
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.ExperimentalLayoutApi
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
@@ -23,10 +26,18 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import coil.ImageLoader
+import coil.compose.rememberAsyncImagePainter
+import coil.decode.GifDecoder
+import coil.decode.ImageDecoderDecoder
+import coil.request.ImageRequest
+import coil.size.Size
 import com.example.frenshichatbotandroidapp.R
 import com.example.frenshichatbotandroidapp.control.FrenShiController
 import com.example.frenshichatbotandroidapp.control.MessagesController
@@ -58,8 +69,9 @@ fun AppGUIView(
     val messagesListItems = messagesListModelView.messagesList //a state to store the change of the list of messages in the chat using Model View architecture
     Column (){
         LazyColumn(
-            Modifier.weight(1f)
-            .padding(bottom = 20.dp),
+            Modifier
+                .weight(1f)
+                .padding(bottom = 20.dp),
             state = lazyColumnListState,
             verticalArrangement = Arrangement.Bottom) {
             coroutineScope.launch { //always scroll to the last item in the messages list
@@ -117,5 +129,35 @@ fun AppGUIView(
                 )
             }
         }
+    }
+}
+@Composable
+fun frenShiWelcomeScreen(userLanguage: String) {
+    Column(Modifier.fillMaxSize(), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.Center) {
+        val context = LocalContext.current
+        val imageLoader = ImageLoader.Builder(context)
+            .components {
+                if (SDK_INT >= 28) {
+                    add(ImageDecoderDecoder.Factory())
+                } else {
+                    add(GifDecoder.Factory())
+                }
+            }
+            .build()
+        val gifFilename = if(userLanguage == "fr") {
+             R.drawable.frenshi_welcome_screen_fr
+        }
+        else {
+            R.drawable.frenshi_welcome_screen_en
+        }
+        Image(
+            painter = rememberAsyncImagePainter(
+                ImageRequest.Builder(context).data(data = gifFilename).apply(block = {
+                    size(Size.ORIGINAL)
+                }).build(), imageLoader = imageLoader
+            ),
+            contentDescription = null,
+            modifier = Modifier.fillMaxWidth(),
+        )
     }
 }

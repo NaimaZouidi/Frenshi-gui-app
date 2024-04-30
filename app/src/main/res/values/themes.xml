@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <style name="Theme.FrenshiChatBotAndroidApp" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.FrenshiChatBotAndroidApp" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground" type="color">@color/blue</item>
+    </style>
+    <style name="Theme.FrenshiChatBotAndroidAppActivity" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground" type="color">@color/white</item>
+    </style>
 </resources>
